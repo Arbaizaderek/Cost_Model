@@ -1,0 +1,8 @@
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\Cost_Model.exe.config
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\Cost_Model.exe
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\Cost_Model.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Form1.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Properties.Resources.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csproj.GenerateResource.cache
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.exe
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.pdb

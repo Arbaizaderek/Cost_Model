@@ -1,0 +1,5 @@
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\DAL\bin\Debug\DAL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\DAL\bin\Debug\DAL.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\DAL\obj\Debug\DAL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\DAL\obj\Debug\DAL.pdb

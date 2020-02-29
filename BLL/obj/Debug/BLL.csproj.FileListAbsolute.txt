@@ -1,0 +1,5 @@
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\BLL\bin\Debug\BLL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\BLL\bin\Debug\BLL.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\BLL\obj\Debug\BLL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\BLL\obj\Debug\BLL.pdb
