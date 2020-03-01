@@ -63,9 +63,39 @@ namespace Cost_Model.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InfoIcon {
+            get {
+                object obj = ResourceManager.GetObject("InfoIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PaniLogo {
             get {
                 object obj = ResourceManager.GetObject("PaniLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SecurityIcon {
+            get {
+                object obj = ResourceManager.GetObject("SecurityIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -6,3 +6,11 @@ C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Propert
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csproj.GenerateResource.cache
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.exe
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csprojAssemblyReference.cache
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\BLL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\DAL.dll
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\BLL.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\DAL.pdb
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\DAL.dll.config
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.AdminDashboard.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csproj.CopyComplete
