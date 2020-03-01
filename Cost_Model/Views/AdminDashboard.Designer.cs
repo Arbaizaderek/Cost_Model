@@ -219,6 +219,7 @@
             this.btnUser.TabIndex = 1;
             this.btnUser.Text = "Administración de usuarios";
             this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnUnities
             // 

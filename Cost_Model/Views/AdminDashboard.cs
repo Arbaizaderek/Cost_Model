@@ -39,5 +39,10 @@ namespace Cost_Model.Views
             Views.ShelterFilter screen = new Views.ShelterFilter();
             screen.Show();
         }
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            Views.UserCrud screen = new Views.UserCrud();
+            screen.Show();
+        }
     }
 }
