@@ -15,6 +15,24 @@ namespace Cost_Model.Views
         public AdminDashboard()
         {
             InitializeComponent();
+            panelHome.BringToFront();
+            labelLocation.Text = "Inicio";
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            panelHome.BringToFront();
+            labelLocation.Text = "Inicio";
+        }
+        private void btnModel_Click(object sender, EventArgs e)
+        {
+            panelModel.BringToFront();
+            labelLocation.Text = "Modelo de costo";
+        }
+        private void btnSecurity_Click(object sender, EventArgs e)
+        {
+            panelSecurity.BringToFront();
+            labelLocation.Text = "Controles";
         }
     }
 }
