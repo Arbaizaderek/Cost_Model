@@ -34,5 +34,10 @@ namespace Cost_Model.Views
             panelSecurity.BringToFront();
             labelLocation.Text = "Controles";
         }
+        private void btnShelter_Click(object sender, EventArgs e)
+        {
+            Views.ShelterFilter screen = new Views.ShelterFilter();
+            screen.Show();
+        }
     }
 }

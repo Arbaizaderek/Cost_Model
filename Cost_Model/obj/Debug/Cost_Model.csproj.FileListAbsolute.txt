@@ -14,3 +14,4 @@ C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\DAL.pdb
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\bin\Debug\DAL.dll.config
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.AdminDashboard.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csproj.CopyComplete
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.ShelterFilter.resources
