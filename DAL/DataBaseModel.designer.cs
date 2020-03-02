@@ -107,6 +107,20 @@ namespace DAL
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), search);
 			return ((ISingleResult<SearchUserResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EnlistSubmodalities")]
+		public ISingleResult<EnlistSubmodalitiesResult> EnlistSubmodalities()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<EnlistSubmodalitiesResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertSubmodality")]
+		public int InsertSubmodality([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(300)")] string submodality, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> modality)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), submodality, modality);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PaniUser")]
@@ -398,6 +412,68 @@ namespace DAL
 				if ((this._Administrador != value))
 				{
 					this._Administrador = value;
+				}
+			}
+		}
+	}
+	
+	public partial class EnlistSubmodalitiesResult
+	{
+		
+		private int _Número_modalidad;
+		
+		private string _Sub_Modalidad;
+		
+		private string _Molidad;
+		
+		public EnlistSubmodalitiesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Número modalidad]", Storage="_Número_modalidad", DbType="Int NOT NULL")]
+		public int Número_modalidad
+		{
+			get
+			{
+				return this._Número_modalidad;
+			}
+			set
+			{
+				if ((this._Número_modalidad != value))
+				{
+					this._Número_modalidad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Sub-Modalidad]", Storage="_Sub_Modalidad", DbType="VarChar(300) NOT NULL", CanBeNull=false)]
+		public string Sub_Modalidad
+		{
+			get
+			{
+				return this._Sub_Modalidad;
+			}
+			set
+			{
+				if ((this._Sub_Modalidad != value))
+				{
+					this._Sub_Modalidad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Molidad", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Molidad
+		{
+			get
+			{
+				return this._Molidad;
+			}
+			set
+			{
+				if ((this._Molidad != value))
+				{
+					this._Molidad = value;
 				}
 			}
 		}

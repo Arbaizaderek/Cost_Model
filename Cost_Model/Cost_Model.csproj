@@ -67,6 +67,12 @@
     <Compile Include="Views\ShelterFilter.Designer.cs">
       <DependentUpon>ShelterFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubModalityCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubModalityCrud.Designer.cs">
+      <DependentUpon>SubModalityCrud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserCrud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ShelterFilter.resx">
       <DependentUpon>ShelterFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubModalityCrud.resx">
+      <DependentUpon>SubModalityCrud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserCrud.resx">
       <DependentUpon>UserCrud.cs</DependentUpon>

@@ -16,3 +16,4 @@ C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.A
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.csproj.CopyComplete
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.ShelterFilter.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.UserCrud.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.SubModalityCrud.resources

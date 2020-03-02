@@ -42,4 +42,16 @@
       <Column Name="Administrador" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.EnlistSubmodalities" Method="EnlistSubmodalities">
+    <ElementType Name="EnlistSubmodalitiesResult">
+      <Column Name="[Número modalidad]" Member="Número_modalidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Sub-Modalidad]" Member="Sub_Modalidad" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Molidad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.InsertSubmodality" Method="InsertSubmodality">
+    <Parameter Name="submodality" Type="System.String" DbType="VarChar(300)" />
+    <Parameter Name="modality" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

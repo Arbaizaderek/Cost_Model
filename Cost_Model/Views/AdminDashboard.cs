@@ -44,5 +44,11 @@ namespace Cost_Model.Views
             Views.UserCrud screen = new Views.UserCrud();
             screen.Show();
         }
+
+        private void btnSubModalities_Click(object sender, EventArgs e)
+        {
+            Views.SubModalityCrud screen = new Views.SubModalityCrud();
+            screen.Show();
+        }
     }
 }

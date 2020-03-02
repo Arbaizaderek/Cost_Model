@@ -22,7 +22,6 @@ namespace Cost_Model.Views
             btnDelete.Visible = false;
             EnlistUser();
         }
-
         private void UserCrud_Load(object sender, EventArgs e)
         {
 
