@@ -27,7 +27,7 @@ namespace Cost_Model
         {
             try
             {
-                var user = db.Users.Where(i => i.Username == txtUsername.Text && i.Password == txtPassword.Text).Single();
+                var user = db.PaniUsers.Where(i => i.Username == txtUsername.Text && i.Password == txtPassword.Text).Single();
                 if (user != null)
                 {
                     if (user.Administrator == true)
