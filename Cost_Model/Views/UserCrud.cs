@@ -123,5 +123,14 @@ namespace Cost_Model.Views
             }
             
         }
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

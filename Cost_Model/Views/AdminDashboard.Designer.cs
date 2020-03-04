@@ -285,6 +285,7 @@
             this.btnUnities.TabIndex = 2;
             this.btnUnities.Text = "Administración de unidades";
             this.btnUnities.UseVisualStyleBackColor = false;
+            this.btnUnities.Click += new System.EventHandler(this.btnUnities_Click);
             // 
             // btnUser
             // 

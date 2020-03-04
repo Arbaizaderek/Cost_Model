@@ -61,6 +61,12 @@
     <Compile Include="Views\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ShelterCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ShelterCrud.Designer.cs">
+      <DependentUpon>ShelterCrud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShelterFilter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="Views\SubModalityCrud.Designer.cs">
       <DependentUpon>SubModalityCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnitySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UnitySelector.Designer.cs">
+      <DependentUpon>UnitySelector.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UserCrud.cs">
       <SubType>Form</SubType>
@@ -95,11 +107,17 @@
     <EmbeddedResource Include="Views\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShelterCrud.resx">
+      <DependentUpon>ShelterCrud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ShelterFilter.resx">
       <DependentUpon>ShelterFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SubModalityCrud.resx">
       <DependentUpon>SubModalityCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UnitySelector.resx">
+      <DependentUpon>UnitySelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserCrud.resx">
       <DependentUpon>UserCrud.cs</DependentUpon>

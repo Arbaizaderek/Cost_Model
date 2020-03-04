@@ -106,6 +106,7 @@
             this.dataGridViewUser.RowTemplate.Height = 24;
             this.dataGridViewUser.Size = new System.Drawing.Size(776, 256);
             this.dataGridViewUser.TabIndex = 7;
+            this.dataGridViewUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUser_CellContentClick);
             this.dataGridViewUser.DoubleClick += new System.EventHandler(this.dataGridViewUser_DoubleClick);
             // 
             // txtSearch
@@ -116,6 +117,7 @@
             this.txtSearch.Size = new System.Drawing.Size(179, 40);
             this.txtSearch.TabIndex = 8;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnSearch
             // 

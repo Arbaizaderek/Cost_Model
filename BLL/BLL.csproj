@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAlbergue.cs" />
     <Compile Include="clsPaniUser.cs" />
     <Compile Include="clsSubmodality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

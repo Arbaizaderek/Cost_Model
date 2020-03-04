@@ -50,5 +50,11 @@ namespace Cost_Model.Views
             Views.SubModalityCrud screen = new Views.SubModalityCrud();
             screen.Show();
         }
+
+        private void btnUnities_Click(object sender, EventArgs e)
+        {
+            Views.UnitySelector screen = new Views.UnitySelector();
+            screen.Show();
+        }
     }
 }
