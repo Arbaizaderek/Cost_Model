@@ -23,5 +23,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnIntervention_Click(object sender, EventArgs e)
+        {
+            Views.IntervencionCrud screen = new Views.IntervencionCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }

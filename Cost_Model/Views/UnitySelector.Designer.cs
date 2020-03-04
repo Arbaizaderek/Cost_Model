@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panelModel = new System.Windows.Forms.Panel();
+            this.labelLocation = new System.Windows.Forms.Label();
             this.btnUnity = new System.Windows.Forms.Button();
             this.btnONG = new System.Windows.Forms.Button();
             this.btnHogar = new System.Windows.Forms.Button();
             this.btnCenter = new System.Windows.Forms.Button();
             this.btnIntervention = new System.Windows.Forms.Button();
             this.btnShelter = new System.Windows.Forms.Button();
-            this.labelLocation = new System.Windows.Forms.Label();
             this.panelModel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,17 @@
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(884, 523);
             this.panelModel.TabIndex = 1;
+            // 
+            // labelLocation
+            // 
+            this.labelLocation.AutoSize = true;
+            this.labelLocation.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLocation.ForeColor = System.Drawing.Color.Black;
+            this.labelLocation.Location = new System.Drawing.Point(170, 53);
+            this.labelLocation.Name = "labelLocation";
+            this.labelLocation.Size = new System.Drawing.Size(545, 35);
+            this.labelLocation.TabIndex = 6;
+            this.labelLocation.Text = "Seleccione la modalidad que desea administrar";
             // 
             // btnUnity
             // 
@@ -124,6 +135,7 @@
             this.btnIntervention.TabIndex = 1;
             this.btnIntervention.Text = "Centro de Intervención";
             this.btnIntervention.UseVisualStyleBackColor = false;
+            this.btnIntervention.Click += new System.EventHandler(this.btnIntervention_Click);
             // 
             // btnShelter
             // 
@@ -139,17 +151,6 @@
             this.btnShelter.Text = "Albergue Institucional";
             this.btnShelter.UseVisualStyleBackColor = false;
             this.btnShelter.Click += new System.EventHandler(this.btnShelter_Click);
-            // 
-            // labelLocation
-            // 
-            this.labelLocation.AutoSize = true;
-            this.labelLocation.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLocation.ForeColor = System.Drawing.Color.Black;
-            this.labelLocation.Location = new System.Drawing.Point(170, 53);
-            this.labelLocation.Name = "labelLocation";
-            this.labelLocation.Size = new System.Drawing.Size(545, 35);
-            this.labelLocation.TabIndex = 6;
-            this.labelLocation.Text = "Seleccione la modalidad que desea administrar";
             // 
             // UnitySelector
             // 
