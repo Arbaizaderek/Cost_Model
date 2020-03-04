@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAlbergue.cs" />
+    <Compile Include="clsCentro.cs" />
     <Compile Include="clsIntervencion.cs" />
     <Compile Include="clsPaniUser.cs" />
     <Compile Include="clsSubmodality.cs" />

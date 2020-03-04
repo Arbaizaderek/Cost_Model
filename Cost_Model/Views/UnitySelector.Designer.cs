@@ -121,6 +121,7 @@
             this.btnCenter.TabIndex = 2;
             this.btnCenter.Text = "Centro de Atención Integral";
             this.btnCenter.UseVisualStyleBackColor = false;
+            this.btnCenter.Click += new System.EventHandler(this.btnCenter_Click);
             // 
             // btnIntervention
             // 

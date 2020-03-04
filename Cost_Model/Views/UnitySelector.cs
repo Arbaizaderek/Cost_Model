@@ -30,5 +30,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnCenter_Click(object sender, EventArgs e)
+        {
+            Views.AtencionCrud screen = new Views.AtencionCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }
