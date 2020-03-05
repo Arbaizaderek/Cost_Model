@@ -107,6 +107,7 @@
             this.btnHogar.TabIndex = 3;
             this.btnHogar.Text = "Hogar Solidario";
             this.btnHogar.UseVisualStyleBackColor = false;
+            this.btnHogar.Click += new System.EventHandler(this.btnHogar_Click);
             // 
             // btnCenter
             // 

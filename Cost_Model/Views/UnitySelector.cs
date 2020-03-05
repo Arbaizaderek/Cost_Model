@@ -37,5 +37,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnHogar_Click(object sender, EventArgs e)
+        {
+            Views.HogarCrud screen = new Views.HogarCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }
