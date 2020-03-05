@@ -79,6 +79,7 @@
             this.btnUnity.TabIndex = 5;
             this.btnUnity.Text = "Unidad Móvil";
             this.btnUnity.UseVisualStyleBackColor = false;
+            this.btnUnity.Click += new System.EventHandler(this.btnUnity_Click);
             // 
             // btnONG
             // 

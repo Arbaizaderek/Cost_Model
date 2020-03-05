@@ -49,6 +49,7 @@
     <Compile Include="clsONG.cs" />
     <Compile Include="clsPaniUser.cs" />
     <Compile Include="clsSubmodality.cs" />
+    <Compile Include="clsUnidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

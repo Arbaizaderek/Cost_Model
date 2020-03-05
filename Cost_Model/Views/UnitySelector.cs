@@ -51,5 +51,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnUnity_Click(object sender, EventArgs e)
+        {
+            Views.UnidadCrud screen = new Views.UnidadCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }

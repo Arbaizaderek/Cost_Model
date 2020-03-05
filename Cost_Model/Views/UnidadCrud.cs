@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Cost_Model.Views
 {
-    public partial class ONGCrud : Form
+    public partial class UnidadCrud : Form
     {
-        BLL.clsONG ong = new BLL.clsONG();
-        public ONGCrud()
+        BLL.clsUnidad unidad = new BLL.clsUnidad();
+        public UnidadCrud()
         {
             InitializeComponent();
             LoadSubModilty();
@@ -26,7 +26,7 @@ namespace Cost_Model.Views
             btnSave.Visible = true;
             btnUpdate.Visible = false;
             btnDelete.Visible = false;
-            EnlistONG();
+            EnlistUnidad();
         }
         void LoadSubModilty()
         {
@@ -36,7 +36,7 @@ namespace Cost_Model.Views
             {
                 db.OpenConnection();
                 command.Connection = DAL.clsDAL.db;
-                command.CommandText = "select Sub_Modality.Sub_Modality_Name from Sub_Modality where Sub_Modality.Modality_ID = 5";
+                command.CommandText = "select Sub_Modality.Sub_Modality_Name from Sub_Modality where Sub_Modality.Modality_ID = 6";
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
@@ -91,9 +91,9 @@ namespace Cost_Model.Views
                 MessageBox.Show("Error ");
             }
         }
-        void EnlistONG()
+        void EnlistUnidad()
         {
-            dataGridViewIntervencion.DataSource = ong.EnlistONG();
+            dataGridViewIntervencion.DataSource = unidad.EnlistUnidad();
         }
         bool Validations()
         {
@@ -324,8 +324,8 @@ namespace Cost_Model.Views
             {
                 adm = Convert.ToDecimal(txtAdmin.Text);
             }
-            ong.InsertONG(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
-            EnlistONG();
+            unidad.InsertUnidad(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
+            EnlistUnidad();
             Clean();
         }
         private void btnSave_Click(object sender, EventArgs e)
@@ -401,7 +401,7 @@ namespace Cost_Model.Views
                 txtAdmin.Text = dataGridViewIntervencion.CurrentRow.Cells[21].Value.ToString();
             }
         }
-        void UpdateONG()
+        void UpdateUnidad()
         {
             string name = txtName.Text;
             int f1 = Convert.ToInt32(numericUpDownF04.Value);
@@ -492,22 +492,22 @@ namespace Cost_Model.Views
             {
                 adm = Convert.ToDecimal(txtAdmin.Text);
             }
-            ong.UpdateONG(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
-            EnlistONG();
+            unidad.UpdateUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
+            EnlistUnidad();
             Clean();
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (Validations() == true)
             {
-                UpdateONG();
+                UpdateUnidad();
             }
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            ong.DeleteONG(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            unidad.DeleteUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
             Clean();
-            EnlistONG();
+            EnlistUnidad();
             btnSave.Visible = true;
             btnUpdate.Visible = false;
             btnDelete.Visible = false;
@@ -520,7 +520,7 @@ namespace Cost_Model.Views
             }
             else
             {
-                dataGridViewIntervencion.DataSource = ong.SearchONG(txtSearch.Text);
+                dataGridViewIntervencion.DataSource = unidad.SearchUnidad(txtSearch.Text);
             }
         }
     }
