@@ -22,3 +22,4 @@ C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.S
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.IntervencionCrud.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.AtencionCrud.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.HogarCrud.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.ONGCrud.resources

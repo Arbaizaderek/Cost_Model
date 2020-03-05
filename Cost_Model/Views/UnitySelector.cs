@@ -44,5 +44,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnONG_Click(object sender, EventArgs e)
+        {
+            Views.ONGCrud screen = new Views.ONGCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }

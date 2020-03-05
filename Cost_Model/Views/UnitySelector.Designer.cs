@@ -93,6 +93,7 @@
             this.btnONG.TabIndex = 4;
             this.btnONG.Text = "Organización no Gubernamental";
             this.btnONG.UseVisualStyleBackColor = false;
+            this.btnONG.Click += new System.EventHandler(this.btnONG_Click);
             // 
             // btnHogar
             // 

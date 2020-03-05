@@ -46,6 +46,7 @@
     <Compile Include="clsCentro.cs" />
     <Compile Include="clsHogar.cs" />
     <Compile Include="clsIntervencion.cs" />
+    <Compile Include="clsONG.cs" />
     <Compile Include="clsPaniUser.cs" />
     <Compile Include="clsSubmodality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
