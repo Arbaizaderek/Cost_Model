@@ -13,6 +13,7 @@ namespace Cost_Model.Views
 {
     public partial class ShelterFilter : Form
     {
+        BLL.clsAlbergue albergue = new BLL.clsAlbergue();
         public ShelterFilter()
         {
             InitializeComponent();
@@ -59,6 +60,14 @@ namespace Cost_Model.Views
             catch
             {
                 MessageBox.Show("Error ");
+            }
+        }
+
+        private void btnModel_Click(object sender, EventArgs e)
+        {
+            if(comboBoxSubModalities.SelectedIndex != -1)
+            {
+                dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString());
             }
         }
     }

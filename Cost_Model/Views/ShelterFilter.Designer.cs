@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelLocation = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@
             this.comboBoxAgeRange = new System.Windows.Forms.ComboBox();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.btnModel = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelLocation
@@ -68,7 +71,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(104, 196);
+            this.label2.Location = new System.Drawing.Point(104, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 35);
             this.label2.TabIndex = 3;
@@ -79,7 +82,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(181, 415);
+            this.label3.Location = new System.Drawing.Point(674, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 35);
             this.label3.TabIndex = 4;
@@ -90,7 +93,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(189, 264);
+            this.label4.Location = new System.Drawing.Point(682, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 35);
             this.label4.TabIndex = 5;
@@ -101,7 +104,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(121, 335);
+            this.label5.Location = new System.Drawing.Point(121, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(169, 35);
             this.label5.TabIndex = 6;
@@ -111,18 +114,18 @@
             // 
             this.comboBoxSubModalities.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSubModalities.FormattingEnabled = true;
-            this.comboBoxSubModalities.Location = new System.Drawing.Point(298, 190);
+            this.comboBoxSubModalities.Location = new System.Drawing.Point(298, 163);
             this.comboBoxSubModalities.Name = "comboBoxSubModalities";
-            this.comboBoxSubModalities.Size = new System.Drawing.Size(398, 32);
+            this.comboBoxSubModalities.Size = new System.Drawing.Size(248, 32);
             this.comboBoxSubModalities.TabIndex = 7;
             // 
             // comboBoxRegion
             // 
             this.comboBoxRegion.Font = new System.Drawing.Font("Calibri", 12F);
             this.comboBoxRegion.FormattingEnabled = true;
-            this.comboBoxRegion.Location = new System.Drawing.Point(298, 264);
+            this.comboBoxRegion.Location = new System.Drawing.Point(791, 163);
             this.comboBoxRegion.Name = "comboBoxRegion";
-            this.comboBoxRegion.Size = new System.Drawing.Size(398, 32);
+            this.comboBoxRegion.Size = new System.Drawing.Size(248, 32);
             this.comboBoxRegion.TabIndex = 8;
             // 
             // comboBoxAgeRange
@@ -134,9 +137,9 @@
             "De 5 a 6 años",
             "De 7 a 12 años",
             "De 13 a 18 años"});
-            this.comboBoxAgeRange.Location = new System.Drawing.Point(298, 332);
+            this.comboBoxAgeRange.Location = new System.Drawing.Point(298, 220);
             this.comboBoxAgeRange.Name = "comboBoxAgeRange";
-            this.comboBoxAgeRange.Size = new System.Drawing.Size(398, 32);
+            this.comboBoxAgeRange.Size = new System.Drawing.Size(248, 32);
             this.comboBoxAgeRange.TabIndex = 9;
             // 
             // comboBoxGender
@@ -147,9 +150,9 @@
             "Hombres",
             "Mujeres",
             "Mixto"});
-            this.comboBoxGender.Location = new System.Drawing.Point(298, 409);
+            this.comboBoxGender.Location = new System.Drawing.Point(791, 220);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(403, 32);
+            this.comboBoxGender.Size = new System.Drawing.Size(248, 32);
             this.comboBoxGender.TabIndex = 10;
             // 
             // btnModel
@@ -158,19 +161,46 @@
             this.btnModel.FlatAppearance.BorderSize = 0;
             this.btnModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModel.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModel.Location = new System.Drawing.Point(341, 502);
+            this.btnModel.Location = new System.Drawing.Point(1221, 169);
             this.btnModel.Name = "btnModel";
             this.btnModel.Size = new System.Drawing.Size(188, 64);
             this.btnModel.TabIndex = 11;
             this.btnModel.Text = "Modelar";
             this.btnModel.UseVisualStyleBackColor = false;
+            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 276);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Calibri", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Format = "N2";
+            this.dataGridView1.RowTemplate.DefaultCellStyle.NullValue = "Información no disponible";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1565, 113);
+            this.dataGridView1.TabIndex = 12;
             // 
             // ShelterFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(800, 627);
+            this.ClientSize = new System.Drawing.Size(1571, 455);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnModel);
             this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.comboBoxAgeRange);
@@ -184,6 +214,7 @@
             this.Controls.Add(this.labelLocation);
             this.Name = "ShelterFilter";
             this.Text = "ShelterFilter";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +233,6 @@
         private System.Windows.Forms.ComboBox comboBoxAgeRange;
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.Button btnModel;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

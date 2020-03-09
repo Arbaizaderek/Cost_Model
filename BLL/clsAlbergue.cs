@@ -62,5 +62,17 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
+
+        public DataTable Report1Albergue(String sub)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue1 '" + sub + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
     }
 }
