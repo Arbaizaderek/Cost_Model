@@ -65,10 +65,251 @@ namespace Cost_Model.Views
 
         private void btnModel_Click(object sender, EventArgs e)
         {
-            if(comboBoxSubModalities.SelectedIndex != -1)
+            if (comboBoxSubModalities.SelectedIndex != -1 && comboBoxRegion.SelectedIndex == -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex == -1)
             {
-                dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString());
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString());
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
+            if (comboBoxSubModalities.SelectedIndex == -1 && comboBoxRegion.SelectedIndex != -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex == -1)
+            {
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report2Albergue(comboBoxRegion.SelectedItem.ToString());
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            if (comboBoxSubModalities.SelectedIndex == -1 && comboBoxRegion.SelectedIndex == -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex != -1)
+            {
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report3Albergue(comboBoxGender.SelectedIndex + 1);
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+            }
+            if (comboBoxSubModalities.SelectedIndex == -1 && comboBoxRegion.SelectedIndex == -1 && comboBoxAgeRange.SelectedIndex != -1 && comboBoxGender.SelectedIndex == -1)
+            {
+                if (comboBoxAgeRange.SelectedIndex == 0)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report4Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 1)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report5Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 2)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report6Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch(Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 3)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report7Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 4)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report8Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            if (comboBoxSubModalities.SelectedIndex != -1 && comboBoxRegion.SelectedIndex != -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex == -1)
+            {
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report9Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            if (comboBoxSubModalities.SelectedIndex != -1 && comboBoxRegion.SelectedIndex == -1 && comboBoxAgeRange.SelectedIndex != -1 && comboBoxGender.SelectedIndex == -1)
+            {
+                if (comboBoxAgeRange.SelectedIndex == 0)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report10Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 1)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report11Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 2)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report12Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 3)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report13Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 4)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString()); 
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            if (comboBoxSubModalities.SelectedIndex != -1 && comboBoxRegion.SelectedIndex == -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex != -1)
+            {
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report14Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex+1);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            if (comboBoxSubModalities.SelectedIndex == -1 && comboBoxRegion.SelectedIndex != -1 && comboBoxAgeRange.SelectedIndex != -1 && comboBoxGender.SelectedIndex == -1)
+            {
+                if (comboBoxAgeRange.SelectedIndex == 0)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report15Albergue(comboBoxRegion.SelectedItem.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 1)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report16Albergue(comboBoxRegion.SelectedItem.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 2)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report17Albergue(comboBoxRegion.SelectedItem.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if (comboBoxAgeRange.SelectedIndex == 3)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report18Albergue(comboBoxRegion.SelectedItem.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                if(comboBoxAgeRange.SelectedIndex == 4)
+                {
+                    try
+                    {
+                        dataGridView1.DataSource = albergue.Report2Albergue(comboBoxRegion.SelectedItem.ToString());
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            if (comboBoxSubModalities.SelectedIndex == -1 && comboBoxRegion.SelectedIndex != -1 && comboBoxAgeRange.SelectedIndex == -1 && comboBoxGender.SelectedIndex != -1)
+            {
+                try
+                {
+                    dataGridView1.DataSource = albergue.Report19Albergue(comboBoxRegion.SelectedItem.ToString(),comboBoxGender.SelectedIndex + 1);
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+
         }
     }
 }

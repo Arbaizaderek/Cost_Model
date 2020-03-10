@@ -136,7 +136,8 @@
             "De 0 a 4 años",
             "De 5 a 6 años",
             "De 7 a 12 años",
-            "De 13 a 18 años"});
+            "De 13 a 18 años",
+            "De 0 a 18 años."});
             this.comboBoxAgeRange.Location = new System.Drawing.Point(298, 220);
             this.comboBoxAgeRange.Name = "comboBoxAgeRange";
             this.comboBoxAgeRange.Size = new System.Drawing.Size(248, 32);

@@ -74,5 +74,204 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
+        public DataTable Report2Albergue(String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue2 '" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report3Albergue(int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue3 " + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+
+        public DataTable Report4Albergue(int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue4; ";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report5Albergue(int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue5; ";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report6Albergue(int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue6; ";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report7Albergue(int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue7; ";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report8Albergue(int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue8; ";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report9Albergue(String sub, String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue9 '"+sub+"','"+reg+"';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report10Albergue(String sub, int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue10 '" + sub + "'," + eda + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report11Albergue(String sub, int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue11 '" + sub + "'," + eda + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report12Albergue(String sub, int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue12 '" + sub + "'," + eda + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report13Albergue(String sub, int eda)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue13 '" + sub + "'," + eda + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report14Albergue(String sub, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue14 '" + sub + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report15Albergue(String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue15 '" + reg+ "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report16Albergue(String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue16 '" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report17Albergue(String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue17 '" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report18Albergue(String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue18 '" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report19Albergue(String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue19 '" + reg + "',"+gen+";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
     }
 }
