@@ -273,5 +273,236 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
+        public DataTable Report20Albergue(int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue20 " + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report21Albergue(int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue21 " + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report22Albergue(int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue22 " + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report23Albergue(int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue23 " + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report24Albergue(String sub, String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue24 '" + sub + "','" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report25Albergue(String sub, String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue25 '" + sub + "','" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report26Albergue(String sub, String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue26 '" + sub + "','" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report27Albergue(String sub, String reg)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue27 '" + sub + "','" + reg + "';";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report28Albergue(String sub, String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue28 '" + sub + "','" + reg + "'," +gen+ ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report29Albergue(String sub, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue29 '" + sub + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report30Albergue(String sub, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue30 '" + sub + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report31Albergue(String sub, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue31 '" + sub + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report32Albergue(String sub, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue32 '" + sub + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report33Albergue(String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue33 '" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report34Albergue(String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue34 '" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report35Albergue(String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue35 '" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report36Albergue(String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue36 '" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report37Albergue(String sub, String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue37 '" + sub + "','" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report38Albergue(String sub, String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue38 '" + sub + "','" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report39Albergue(String sub, String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue39 '" + sub + "','" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+        public DataTable Report40Albergue(String sub, String reg, int gen)
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ReportAlbergue40 '" + sub + "','" + reg + "'," + gen + ";";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
     }
 }
