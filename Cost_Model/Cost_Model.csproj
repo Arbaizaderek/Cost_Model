@@ -67,11 +67,23 @@
     <Compile Include="Views\AtencionCrud.Designer.cs">
       <DependentUpon>AtencionCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CentroFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CentroFilter.Designer.cs">
+      <DependentUpon>CentroFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\HogarCrud.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\HogarCrud.Designer.cs">
       <DependentUpon>HogarCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HogarFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HogarFilter.Designer.cs">
+      <DependentUpon>HogarFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IntervencionCrud.cs">
       <SubType>Form</SubType>
@@ -79,11 +91,23 @@
     <Compile Include="Views\IntervencionCrud.Designer.cs">
       <DependentUpon>IntervencionCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\IntervencionFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IntervencionFilter.Designer.cs">
+      <DependentUpon>IntervencionFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ONGCrud.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ONGCrud.Designer.cs">
       <DependentUpon>ONGCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONGFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ONGFilter.Designer.cs">
+      <DependentUpon>ONGFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ReportPrinter.cs">
       <SubType>Form</SubType>
@@ -114,6 +138,12 @@
     </Compile>
     <Compile Include="Views\UnidadCrud.Designer.cs">
       <DependentUpon>UnidadCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnidadesFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UnidadesFilter.Designer.cs">
+      <DependentUpon>UnidadesFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UnitySelector.cs">
       <SubType>Form</SubType>
@@ -146,14 +176,26 @@
     <EmbeddedResource Include="Views\AtencionCrud.resx">
       <DependentUpon>AtencionCrud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CentroFilter.resx">
+      <DependentUpon>CentroFilter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\HogarCrud.resx">
       <DependentUpon>HogarCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HogarFilter.resx">
+      <DependentUpon>HogarFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\IntervencionCrud.resx">
       <DependentUpon>IntervencionCrud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\IntervencionFilter.resx">
+      <DependentUpon>IntervencionFilter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ONGCrud.resx">
       <DependentUpon>ONGCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ONGFilter.resx">
+      <DependentUpon>ONGFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ReportPrinter.resx">
       <DependentUpon>ReportPrinter.cs</DependentUpon>
@@ -169,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UnidadCrud.resx">
       <DependentUpon>UnidadCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UnidadesFilter.resx">
+      <DependentUpon>UnidadesFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UnitySelector.resx">
       <DependentUpon>UnitySelector.cs</DependentUpon>

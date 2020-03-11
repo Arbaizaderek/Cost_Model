@@ -96,7 +96,6 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
-
         public DataTable Report4Albergue(int eda)
         {
             DataTable dataTable = new DataTable();

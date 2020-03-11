@@ -56,5 +56,35 @@ namespace Cost_Model.Views
             Views.UnitySelector screen = new Views.UnitySelector();
             screen.Show();
         }
+
+        private void btnIntervention_Click(object sender, EventArgs e)
+        {
+            Views.IntervencionFilter screen = new Views.IntervencionFilter();
+            screen.Show();
+        }
+
+        private void btnCenter_Click(object sender, EventArgs e)
+        {
+            Views.CentroFilter screen = new Views.CentroFilter();
+            screen.Show();
+        }
+
+        private void btnHogar_Click(object sender, EventArgs e)
+        {
+            Views.HogarFilter screen = new Views.HogarFilter();
+            screen.Show();
+        }
+
+        private void btnONG_Click(object sender, EventArgs e)
+        {
+            Views.ONGFilter screen = new Views.ONGFilter();
+            screen.Show();
+        }
+
+        private void btnUnity_Click(object sender, EventArgs e)
+        {
+            Views.UnidadesFilter screen = new Views.UnidadesFilter();
+            screen.Show();
+        }
     }
 }
