@@ -25,27 +25,11 @@ namespace Cost_Model
 
         void Login()
         {
-            try
-            {
-                var user = db.PaniUsers.Where(i => i.Username == txtUsername.Text && i.Password == txtPassword.Text).Single();
-                if (user != null)
-                {
-                    if (user.Administrator == true)
-                    {
+
                         Views.AdminDashboard screen = new Views.AdminDashboard();
                         screen.Show();
                         this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("NonAdmin");
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Error al iniciar sesión");
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

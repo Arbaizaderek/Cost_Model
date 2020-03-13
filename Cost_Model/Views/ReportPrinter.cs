@@ -86,7 +86,7 @@ namespace Cost_Model.Views
                 label19.Visible = false;
                 label47.Visible = false;
                 label31.Visible = false;
-                label49.Visible = false;
+                label58.Visible = false;
             }
             else
             {
@@ -99,7 +99,7 @@ namespace Cost_Model.Views
                 label18.Visible = false;
                 label46.Visible = false;
                 label30.Visible = false;
-                label48.Visible = false;
+                label57.Visible = false;
             }
             else
             {
@@ -112,7 +112,7 @@ namespace Cost_Model.Views
                 label17.Visible = false;
                 label45.Visible = false;
                 label29.Visible = false;
-                label47.Visible = false;
+                label56.Visible = false;
             }
             else
             {
@@ -121,30 +121,33 @@ namespace Cost_Model.Views
             }
             if (ate == "")
             {
-                label7.Visible = false;
+
+                label9.Visible = false;
                 label16.Visible = false;
                 label44.Visible = false;
                 label28.Visible = false;
-                label46.Visible = false;
+                label55.Visible = false;
             }
             else
             {
                 label16.Text = ate;
                 label28.Text = porAte;
             }
+
             if (com == "")
             {
-                label8.Visible = false;
+                label10.Visible = false;
                 label15.Visible = false;
                 label43.Visible = false;
                 label27.Visible = false;
-                label45.Visible = false;
+                label54.Visible = false;
             }
             else
             {
                 label15.Text = com;
                 label27.Text = porCom;
             }
+
             if (mes == "")
             {
                 label11.Visible = false;
@@ -158,6 +161,7 @@ namespace Cost_Model.Views
                 label14.Text = mes;
                 label26.Text = porMes;
             }
+
             if (pro == "")
             {
                 label12.Visible = false;
@@ -171,6 +175,7 @@ namespace Cost_Model.Views
                 label13.Text = pro;
                 label25.Text = porPro;
             }
+
             if (gas == "")
             {
                 label68.Visible = false;

@@ -76,6 +76,7 @@ namespace Cost_Model.Views
             if (Validations() == true)
             {
                 InsertSubmodality();
+                EnlistSubmodalities();
                 Clear();
             }
         }

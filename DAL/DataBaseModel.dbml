@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PaniDB" Class="DataBaseModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-6PRTJ4F\PROJECT;Initial Catalog=PaniDB;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="PaniDBConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\PANISER;Initial Catalog=PaniDB;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="PaniDBConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.PaniUser" Member="PaniUsers">
     <Type Name="PaniUser">
       <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

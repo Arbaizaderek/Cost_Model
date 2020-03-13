@@ -12,12 +12,12 @@ namespace DAL
         public static SqlConnection db = null;
         public void OpenConnection()
         {
-            db = new SqlConnection(@"Data Source=DESKTOP-6PRTJ4F\PROJECT;Initial Catalog=PaniDB;Integrated Security=True");
+            db = new SqlConnection(@"Data Source=.\PANISER;Initial Catalog=PaniDB;Integrated Security=True");
             db.Open();
         }
         public void CloseConnection()
         {
-            db = new SqlConnection(@"Data Source=DESKTOP-6PRTJ4F\PROJECT;Initial Catalog=PaniDB;Integrated Security=True");
+            db = new SqlConnection(@"Data Source=.\PANISER;Initial Catalog=PaniDB;Integrated Security=True");
             db.Close();
         }
     }

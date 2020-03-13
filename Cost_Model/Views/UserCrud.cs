@@ -12,7 +12,7 @@ namespace Cost_Model.Views
 {
     public partial class UserCrud : Form
     {
-        DAL.DataBaseModelDataContext db = new DAL.DataBaseModelDataContext();
+        
         BLL.clsPaniUser user = new BLL.clsPaniUser();
         public UserCrud()
         {
@@ -28,7 +28,7 @@ namespace Cost_Model.Views
         }
         void EnlistUser()
         {
-            dataGridViewUser.DataSource = db.EnlistUser();
+            dataGridViewUser.DataSource = user.EnlistUser();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
