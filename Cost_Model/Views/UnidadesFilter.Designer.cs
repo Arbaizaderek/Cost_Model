@@ -205,7 +205,7 @@
             this.labelLocation.Name = "labelLocation";
             this.labelLocation.Size = new System.Drawing.Size(217, 35);
             this.labelLocation.TabIndex = 27;
-            this.labelLocation.Text = "Unidades móbiles";
+            this.labelLocation.Text = "Unidades móviles";
             // 
             // UnidadesFilter
             // 

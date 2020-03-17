@@ -27,6 +27,8 @@ namespace Cost_Model.Views
             btnUpdate.Visible = false;
             btnDelete.Visible = false;
             EnlistHogar();
+            labelTotal.Visible = false;
+            labelCost.Visible = false;
         }
         void LoadSubModilty()
         {
@@ -188,6 +190,13 @@ namespace Cost_Model.Views
                 txtAdmin.Clear();
                 return false;
             }
+            if (txtOtros.Text.Contains("a") || txtOtros.Text.Contains("b") || txtOtros.Text.Contains("c") || txtOtros.Text.Contains("d") || txtOtros.Text.Contains("e") || txtOtros.Text.Contains("f") || txtOtros.Text.Contains("g") || txtOtros.Text.Contains("h") || txtOtros.Text.Contains("i") || txtOtros.Text.Contains("j") || txtOtros.Text.Contains("k") || txtOtros.Text.Contains("l") || txtOtros.Text.Contains("m") || txtOtros.Text.Contains("n") || txtOtros.Text.Contains("ñ") || txtOtros.Text.Contains("o") || txtOtros.Text.Contains("p") || txtOtros.Text.Contains("q") || txtOtros.Text.Contains("r") || txtOtros.Text.Contains("s") || txtOtros.Text.Contains("t") || txtOtros.Text.Contains("u") || txtOtros.Text.Contains("v") || txtOtros.Text.Contains("w") || txtOtros.Text.Contains("x") || txtOtros.Text.Contains("y") || txtOtros.Text.Contains("z") || txtOtros.Text.Contains("A") || txtOtros.Text.Contains("B") || txtOtros.Text.Contains("C") || txtOtros.Text.Contains("D") || txtOtros.Text.Contains("E") || txtOtros.Text.Contains("F") || txtOtros.Text.Contains("G") || txtOtros.Text.Contains("H") || txtOtros.Text.Contains("I") || txtOtros.Text.Contains("J") || txtOtros.Text.Contains("K") || txtOtros.Text.Contains("L") || txtOtros.Text.Contains("M") || txtOtros.Text.Contains("N") || txtOtros.Text.Contains("Ñ") || txtOtros.Text.Contains("O") || txtOtros.Text.Contains("P") || txtOtros.Text.Contains("Q") || txtOtros.Text.Contains("R") || txtOtros.Text.Contains("S") || txtOtros.Text.Contains("T") || txtOtros.Text.Contains("U") || txtOtros.Text.Contains("V") || txtOtros.Text.Contains("W") || txtOtros.Text.Contains("X") || txtOtros.Text.Contains("Y") || txtOtros.Text.Contains("Z") || txtOtros.Text.Contains("á") || txtOtros.Text.Contains("é") || txtOtros.Text.Contains("í") || txtOtros.Text.Contains("ó") || txtOtros.Text.Contains("ú") || txtOtros.Text.Contains("Á") || txtOtros.Text.Contains("É") || txtOtros.Text.Contains("Í") || txtOtros.Text.Contains("Ó") || txtOtros.Text.Contains("Ú"))
+            {
+                txtOtros.Focus();
+                MessageBox.Show("Ingrese solo números.");
+                txtOtros.Clear();
+                return false;
+            }
             if (txtName.Text == "")
             {
                 txtName.Focus();
@@ -232,6 +241,7 @@ namespace Cost_Model.Views
             textBoxMesad.Clear();
             txtProye.Clear();
             txtAdmin.Clear();
+            txtOtros.Clear();
         }
         void InsertHogar()
         {
@@ -324,7 +334,12 @@ namespace Cost_Model.Views
             {
                 adm = Convert.ToDecimal(txtAdmin.Text);
             }
-            hogar.InsertHogar(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
+            decimal oth = 0;
+            if (txtOtros.Text != "")
+            {
+                oth = Convert.ToDecimal(txtOtros.Text);
+            }
+            hogar.InsertHogar(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
             EnlistHogar();
             Clean();
         }

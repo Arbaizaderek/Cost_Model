@@ -25,11 +25,11 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
-        public void InsertHogar(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi)
+        public void InsertHogar(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE INSERTHOGAR '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + ";";
+            command.CommandText = "EXECUTE INSERTHOGAR '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ";";
             command.ExecuteNonQuery();
             MessageBox.Show("Hogar solidario agregado.", "Hogar solidario", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
