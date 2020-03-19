@@ -33,11 +33,11 @@ namespace BLL
             MessageBox.Show("Albergue institucional agregado.", "Albergue institucional", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
         }
-        public void UpdateAlbergue(int id, string name, int sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi)
+        public void UpdateAlbergue(int id, string name, int sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal oth)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE UPDATEALBERGUE " + id+ ",'"+ name + "'," + sub + "," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + ";";
+            command.CommandText = "EXECUTE UPDATEALBERGUE " + id + ",'" + name + "'," + sub + "," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + oth + ";";
             command.ExecuteNonQuery();
             MessageBox.Show("Albergue institucional editado.", "Albergue institucional", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();

@@ -415,6 +415,13 @@ namespace Cost_Model.Views
             {
                 txtAdmin.Text = dataGridViewIntervencion.CurrentRow.Cells[21].Value.ToString();
             }
+            if (dataGridViewIntervencion.CurrentRow.Cells[22].Value.ToString() != "Información no disponible")
+            {
+                txtOtros.Text = dataGridViewIntervencion.CurrentRow.Cells[22].Value.ToString();
+            }
+            labelTotal.Text = dataGridViewIntervencion.CurrentRow.Cells[23].Value.ToString();
+            labelCost.Visible = true;
+            labelTotal.Visible = true;
         }
         void UpdateIntervencion()
         {
@@ -507,9 +514,16 @@ namespace Cost_Model.Views
             {
                 adm = Convert.ToDecimal(txtAdmin.Text);
             }
-            intervencion.UpdateIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
+            decimal oth = 0;
+            if (txtOtros.Text != "")
+            {
+                oth = Convert.ToDecimal(txtOtros.Text);
+            }
+            intervencion.UpdateIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
             EnlistIntervencion();
             Clean();
+            labelCost.Visible = false;
+            labelTotal.Visible = false;
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {

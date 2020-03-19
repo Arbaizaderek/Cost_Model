@@ -443,9 +443,16 @@ namespace Cost_Model.Views
             {
                 adm = Convert.ToDecimal(txtAdmin.Text);
             }
-            albergue.UpdateAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value) ,name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm);
+            decimal oth = 0;
+            if (txtOtros.Text != "")
+            {
+                oth = Convert.ToDecimal(txtOtros.Text);
+            }
+            albergue.UpdateAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value) ,name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
             EnlistAlbergue();
             Clean();
+            labelCost.Visible = false;
+            labelTotal.Visible = false;
         }
         private void btnSave_Click_1(object sender, EventArgs e)
         {
@@ -519,6 +526,13 @@ namespace Cost_Model.Views
             {
                 txtAdmin.Text = dataGridViewUnity.CurrentRow.Cells[21].Value.ToString();
             }
+            if (dataGridViewUnity.CurrentRow.Cells[22].Value.ToString() != "Información no disponible")
+            {
+                txtOtros.Text = dataGridViewUnity.CurrentRow.Cells[22].Value.ToString();
+            }
+            labelTotal.Text = dataGridViewUnity.CurrentRow.Cells[23].Value.ToString();
+            labelCost.Visible = true;
+            labelTotal.Visible = true;
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -538,8 +552,11 @@ namespace Cost_Model.Views
             btnDelete.Visible = false;
             Clean();
             EnlistAlbergue();
+            EnlistAlbergue();
+            Clean();
+            labelCost.Visible = false;
+            labelTotal.Visible = false;
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if(txtSearch.Text == "")
