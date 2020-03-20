@@ -12,7 +12,7 @@ namespace Cost_Model.Views
 {
     public partial class ReportPrinter : Form
     {
-        public ReportPrinter(String inf, String porInf, String edu, String porEdu, String sal, String porSal, String rec, String porRec, String ali, String porAli, String hig, String porHig, String ves, String porVes, String cui, String porCui, String ate, String porAte, String com, String porCom, String mes, String porMes, String pro, String porPro, String gas, String porGas, String tot)
+        public ReportPrinter(String inf, String porInf, String edu, String porEdu, String sal, String porSal, String rec, String porRec, String ali, String porAli, String hig, String porHig, String ves, String porVes, String cui, String porCui, String ate, String porAte, String com, String porCom, String mes, String porMes, String pro, String porPro, String gas, String porGas, String otr, String porOtr, String tot, String location)
         {
             InitializeComponent();
             if (inf == "")
@@ -189,7 +189,22 @@ namespace Cost_Model.Views
                 label67.Text = gas;
                 label66.Text = porGas;
             }
+
+            if (otr == "")
+            {
+                label73.Visible = false;
+                label72.Visible = false;
+                label69.Visible = false;
+                label71.Visible = false;
+                label70.Visible = false;
+            }
+            else
+            {
+                label72.Text = gas;
+                label71.Text = porGas;
+            }
             label38.Text = tot;
+            labelLocation.Text = location;
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)

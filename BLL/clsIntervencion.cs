@@ -387,7 +387,7 @@ namespace BLL
             DataTable dataTable = new DataTable();
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE ReportGeneral30 " + mod + ",'" + sub + "'," + gen + ";";
+            command.CommandText = "EXECUTE ReportGenral30 " + mod + ",'" + sub + "'," + gen + ";";
             SqlDataReader reader = command.ExecuteReader();
             dataTable.Load(reader);
             return dataTable;
@@ -475,7 +475,7 @@ namespace BLL
             DataTable dataTable = new DataTable();
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE ReportGeneral38 " + mod + ",'" + sub + "','" + reg + "'," + gen + ";";
+            command.CommandText = "EXECUTE ReportGenral38 " + mod + ",'" + sub + "','" + reg + "'," + gen + ";";
             SqlDataReader reader = command.ExecuteReader();
             dataTable.Load(reader);
             return dataTable;

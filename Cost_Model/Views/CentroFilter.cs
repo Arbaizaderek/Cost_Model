@@ -643,7 +643,10 @@ namespace Cost_Model.Views
                                                                 dataGridView1.CurrentRow.Cells[23].Value.ToString(),
                                                                 dataGridView1.CurrentRow.Cells[24].Value.ToString(),
                                                                 dataGridView1.CurrentRow.Cells[25].Value.ToString(),
-                                                                dataGridView1.CurrentRow.Cells[26].Value.ToString());
+                                                                dataGridView1.CurrentRow.Cells[26].Value.ToString(),
+                                                                dataGridView1.CurrentRow.Cells[27].Value.ToString(),
+                                                                dataGridView1.CurrentRow.Cells[28].Value.ToString(),
+                                                                 labelLocation.Text);
             sc.Show();
         }
     }
