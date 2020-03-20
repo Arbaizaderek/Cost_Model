@@ -868,10 +868,10 @@
             // labelLocation
             // 
             this.labelLocation.AutoSize = true;
-            this.labelLocation.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLocation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLocation.Location = new System.Drawing.Point(12, 9);
             this.labelLocation.Name = "labelLocation";
-            this.labelLocation.Size = new System.Drawing.Size(76, 23);
+            this.labelLocation.Size = new System.Drawing.Size(81, 24);
             this.labelLocation.TabIndex = 75;
             this.labelLocation.Text = "Location";
             // 

@@ -58,5 +58,12 @@ namespace Cost_Model.Views
             screen.Show();
             this.Hide();
         }
+
+        private void btnProyectoEspecial_Click(object sender, EventArgs e)
+        {
+            Views.ProyectoCrud screen = new Views.ProyectoCrud();
+            screen.Show();
+            this.Hide();
+        }
     }
 }

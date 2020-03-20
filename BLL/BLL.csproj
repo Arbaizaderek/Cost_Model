@@ -48,6 +48,7 @@
     <Compile Include="clsIntervencion.cs" />
     <Compile Include="clsONG.cs" />
     <Compile Include="clsPaniUser.cs" />
+    <Compile Include="clsProyecto.cs" />
     <Compile Include="clsSubmodality.cs" />
     <Compile Include="clsUnidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
