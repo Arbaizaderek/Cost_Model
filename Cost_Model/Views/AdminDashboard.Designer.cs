@@ -43,6 +43,7 @@
             this.btnSubModalities = new System.Windows.Forms.Button();
             this.btnUnities = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
+            this.btnProyecto = new System.Windows.Forms.Button();
             this.btnSecurity = new System.Windows.Forms.Button();
             this.btnModel = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
@@ -97,6 +98,7 @@
             // panelModel
             // 
             this.panelModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(226)))));
+            this.panelModel.Controls.Add(this.btnProyecto);
             this.panelModel.Controls.Add(this.btnUnity);
             this.panelModel.Controls.Add(this.btnONG);
             this.panelModel.Controls.Add(this.btnHogar);
@@ -116,9 +118,9 @@
             this.btnUnity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnity.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUnity.ForeColor = System.Drawing.Color.White;
-            this.btnUnity.Location = new System.Drawing.Point(672, 357);
+            this.btnUnity.Location = new System.Drawing.Point(96, 463);
             this.btnUnity.Name = "btnUnity";
-            this.btnUnity.Size = new System.Drawing.Size(221, 133);
+            this.btnUnity.Size = new System.Drawing.Size(756, 44);
             this.btnUnity.TabIndex = 5;
             this.btnUnity.Text = "Unidad Móvil";
             this.btnUnity.UseVisualStyleBackColor = false;
@@ -131,9 +133,9 @@
             this.btnONG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnONG.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnONG.ForeColor = System.Drawing.Color.White;
-            this.btnONG.Location = new System.Drawing.Point(393, 357);
+            this.btnONG.Location = new System.Drawing.Point(97, 344);
             this.btnONG.Name = "btnONG";
-            this.btnONG.Size = new System.Drawing.Size(221, 133);
+            this.btnONG.Size = new System.Drawing.Size(756, 44);
             this.btnONG.TabIndex = 4;
             this.btnONG.Text = "Organización no Gubernamental";
             this.btnONG.UseVisualStyleBackColor = false;
@@ -146,9 +148,9 @@
             this.btnHogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHogar.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHogar.ForeColor = System.Drawing.Color.White;
-            this.btnHogar.Location = new System.Drawing.Point(114, 357);
+            this.btnHogar.Location = new System.Drawing.Point(97, 287);
             this.btnHogar.Name = "btnHogar";
-            this.btnHogar.Size = new System.Drawing.Size(221, 133);
+            this.btnHogar.Size = new System.Drawing.Size(756, 44);
             this.btnHogar.TabIndex = 3;
             this.btnHogar.Text = "Hogar Solidario";
             this.btnHogar.UseVisualStyleBackColor = false;
@@ -161,9 +163,9 @@
             this.btnCenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCenter.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCenter.ForeColor = System.Drawing.Color.White;
-            this.btnCenter.Location = new System.Drawing.Point(672, 175);
+            this.btnCenter.Location = new System.Drawing.Point(97, 225);
             this.btnCenter.Name = "btnCenter";
-            this.btnCenter.Size = new System.Drawing.Size(221, 133);
+            this.btnCenter.Size = new System.Drawing.Size(756, 44);
             this.btnCenter.TabIndex = 2;
             this.btnCenter.Text = "Centro de Atención Integral";
             this.btnCenter.UseVisualStyleBackColor = false;
@@ -176,9 +178,9 @@
             this.btnIntervention.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIntervention.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIntervention.ForeColor = System.Drawing.Color.White;
-            this.btnIntervention.Location = new System.Drawing.Point(393, 175);
+            this.btnIntervention.Location = new System.Drawing.Point(97, 164);
             this.btnIntervention.Name = "btnIntervention";
-            this.btnIntervention.Size = new System.Drawing.Size(221, 133);
+            this.btnIntervention.Size = new System.Drawing.Size(756, 44);
             this.btnIntervention.TabIndex = 1;
             this.btnIntervention.Text = "Centro de Intervención";
             this.btnIntervention.UseVisualStyleBackColor = false;
@@ -191,9 +193,9 @@
             this.btnShelter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShelter.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShelter.ForeColor = System.Drawing.Color.White;
-            this.btnShelter.Location = new System.Drawing.Point(114, 175);
+            this.btnShelter.Location = new System.Drawing.Point(97, 105);
             this.btnShelter.Name = "btnShelter";
-            this.btnShelter.Size = new System.Drawing.Size(221, 133);
+            this.btnShelter.Size = new System.Drawing.Size(756, 44);
             this.btnShelter.TabIndex = 0;
             this.btnShelter.Text = "Albergue Institucional";
             this.btnShelter.UseVisualStyleBackColor = false;
@@ -256,6 +258,21 @@
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
+            // btnProyecto
+            // 
+            this.btnProyecto.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnProyecto.FlatAppearance.BorderSize = 0;
+            this.btnProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyecto.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProyecto.ForeColor = System.Drawing.Color.White;
+            this.btnProyecto.Location = new System.Drawing.Point(97, 404);
+            this.btnProyecto.Name = "btnProyecto";
+            this.btnProyecto.Size = new System.Drawing.Size(756, 44);
+            this.btnProyecto.TabIndex = 6;
+            this.btnProyecto.Text = "Proyecto especial";
+            this.btnProyecto.UseVisualStyleBackColor = false;
+            this.btnProyecto.Click += new System.EventHandler(this.btnProyecto_Click);
+            // 
             // btnSecurity
             // 
             this.btnSecurity.FlatAppearance.BorderSize = 0;
@@ -312,8 +329,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 729);
-            this.Controls.Add(this.panelSecurity);
             this.Controls.Add(this.panelModel);
+            this.Controls.Add(this.panelSecurity);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelSidebar);
@@ -348,5 +365,6 @@
         private System.Windows.Forms.Button btnSubModalities;
         private System.Windows.Forms.Button btnUnities;
         private System.Windows.Forms.Button btnUser;
+        private System.Windows.Forms.Button btnProyecto;
     }
 }

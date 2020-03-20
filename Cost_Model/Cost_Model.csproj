@@ -115,6 +115,12 @@
     <Compile Include="Views\ProyectoCrud.Designer.cs">
       <DependentUpon>ProyectoCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProyectoFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProyectoFilter.Designer.cs">
+      <DependentUpon>ProyectoFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ReportPrinter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ProyectoCrud.resx">
       <DependentUpon>ProyectoCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProyectoFilter.resx">
+      <DependentUpon>ProyectoFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ReportPrinter.resx">
       <DependentUpon>ReportPrinter.cs</DependentUpon>

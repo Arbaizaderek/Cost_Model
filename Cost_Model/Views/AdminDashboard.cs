@@ -86,5 +86,11 @@ namespace Cost_Model.Views
             Views.UnidadesFilter screen = new Views.UnidadesFilter();
             screen.Show();
         }
+
+        private void btnProyecto_Click(object sender, EventArgs e)
+        {
+            Views.ProyectoFilter screen = new Views.ProyectoFilter();
+            screen.Show();
+        }
     }
 }
