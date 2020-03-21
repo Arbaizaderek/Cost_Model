@@ -660,7 +660,6 @@ namespace Cost_Model.Views
                 }
             }
         }
-
         private void btnReport_Click(object sender, EventArgs e)
         {
             Views.ReportPrinter sc = new Views.ReportPrinter(   dataGridView1.CurrentRow.Cells[0].Value.ToString(),
