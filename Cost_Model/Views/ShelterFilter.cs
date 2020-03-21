@@ -19,6 +19,7 @@ namespace Cost_Model.Views
             InitializeComponent();
             LoadSubModalities();
             LoadRegions();
+            btnReport.Visible = false;
         }
         void LoadSubModalities()
         {
@@ -69,8 +70,9 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
-                catch (Exception error)
+                catch (Exception)
                 {
                     MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -81,8 +83,9 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report2Albergue(comboBoxRegion.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
-                catch (Exception error)
+                catch (Exception)
                 {
                     MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -92,8 +95,9 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report3Albergue(comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
-                catch (Exception error)
+                catch (Exception)
                 {
                     MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -106,8 +110,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report4Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -117,8 +122,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report5Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -128,8 +134,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report6Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch(Exception error)
+                    catch(Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -139,8 +146,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report7Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -150,8 +158,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report8Albergue(comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -162,8 +171,9 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report9Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
-                catch (Exception error)
+                catch (Exception)
                 {
                     MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -175,8 +185,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report10Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -186,8 +197,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report11Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -197,8 +209,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report12Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -208,8 +221,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report13Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -218,9 +232,10 @@ namespace Cost_Model.Views
                 {
                     try
                     {
-                        dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString()); 
+                        dataGridView1.DataSource = albergue.Report1Albergue(comboBoxSubModalities.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -231,6 +246,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report14Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex+1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -245,6 +261,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report15Albergue(comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -256,6 +273,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report16Albergue(comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -267,6 +285,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report17Albergue(comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -278,6 +297,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report18Albergue(comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -289,8 +309,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report2Albergue(comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -301,6 +322,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report19Albergue(comboBoxRegion.SelectedItem.ToString(),comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -315,6 +337,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report20Albergue(comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -327,6 +350,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report21Albergue(comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -338,6 +362,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report22Albergue(comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -349,6 +374,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report23Albergue(comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -360,8 +386,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report3Albergue(comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -374,6 +401,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report24Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -385,6 +413,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report25Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -396,6 +425,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report26Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -407,6 +437,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report27Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -418,8 +449,9 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report9Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
-                    catch (Exception error)
+                    catch (Exception)
                     {
                         MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -430,6 +462,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = albergue.Report28Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -444,6 +477,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report29Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex+1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -455,6 +489,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report30Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -466,6 +501,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report31Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -477,6 +513,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report32Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -488,6 +525,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report14Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -502,6 +540,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report33Albergue(comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex+1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -513,6 +552,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report34Albergue(comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -524,6 +564,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report35Albergue(comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -535,6 +576,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report36Albergue(comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -546,6 +588,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report19Albergue(comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -560,6 +603,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report37Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -571,6 +615,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report38Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -582,6 +627,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report39Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -593,6 +639,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report40Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -604,6 +651,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = albergue.Report28Albergue(comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {

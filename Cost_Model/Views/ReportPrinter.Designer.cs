@@ -494,7 +494,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(340, 518);
+            this.label38.Location = new System.Drawing.Point(329, 518);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(54, 35);
             this.label38.TabIndex = 38;
@@ -504,7 +504,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(155, 518);
+            this.label39.Location = new System.Drawing.Point(144, 518);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(95, 35);
             this.label39.TabIndex = 37;

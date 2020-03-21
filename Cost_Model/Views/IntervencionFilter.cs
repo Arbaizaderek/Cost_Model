@@ -12,6 +12,7 @@ namespace Cost_Model.Views
             InitializeComponent();
             LoadSubModalities();
             LoadRegions();
+            btnReport.Visible = false;
         }
         void LoadSubModalities()
         {
@@ -62,6 +63,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report1General(comboBoxSubModalities.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -74,6 +76,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report2General(2, comboBoxRegion.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -85,8 +88,9 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report3General(2, comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
-                catch (Exception error)
+                catch (Exception)
                 {
                     MessageBox.Show("Información no disponible para generar modelo.", "Información no disponible", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -99,6 +103,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report4General(2);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -110,6 +115,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report5General(2);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -121,6 +127,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report6General(2);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -132,6 +139,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report7General(2);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -143,6 +151,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report8General(2);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -155,6 +164,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report9General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -168,6 +178,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report10General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -179,6 +190,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report11General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -190,6 +202,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report12General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -201,6 +214,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report13General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxAgeRange.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -212,6 +226,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report1General(comboBoxSubModalities.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -224,6 +239,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report14General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -238,6 +254,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report15General(2, comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -249,6 +266,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report16General(2, comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -260,6 +278,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report17General(2, comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -271,6 +290,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report18General(2, comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -282,6 +302,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report2General(2, comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -294,6 +315,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report19General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -308,6 +330,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report20General(2, comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -320,6 +343,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report21General(2, comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -331,6 +355,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report22General(2, comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -342,6 +367,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report23General(2, comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch
                     {
@@ -353,6 +379,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report3General(2, comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -367,6 +394,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report24General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -378,6 +406,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report25General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -389,6 +418,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report26General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -400,6 +430,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report27General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -411,6 +442,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report9General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString());
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -423,6 +455,7 @@ namespace Cost_Model.Views
                 try
                 {
                     dataGridView1.DataSource = intervencion.Report28General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                    btnReport.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -437,6 +470,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report29General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -448,6 +482,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report30General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -459,6 +494,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report31General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -470,6 +506,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report32General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -481,6 +518,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report14General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -495,6 +533,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report33General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -506,6 +545,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report34General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -517,6 +557,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report35General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -528,6 +569,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report36General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -539,6 +581,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report19General(2, comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -553,6 +596,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report37General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -564,6 +608,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report38General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -575,6 +620,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report39General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -586,6 +632,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report40General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
@@ -597,6 +644,7 @@ namespace Cost_Model.Views
                     try
                     {
                         dataGridView1.DataSource = intervencion.Report28General(2, comboBoxSubModalities.SelectedItem.ToString(), comboBoxRegion.SelectedItem.ToString(), comboBoxGender.SelectedIndex + 1);
+                        btnReport.Visible = true;
                     }
                     catch (Exception)
                     {
