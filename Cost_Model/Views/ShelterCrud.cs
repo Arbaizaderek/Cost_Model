@@ -568,5 +568,129 @@ namespace Cost_Model.Views
                 dataGridViewUnity.DataSource = albergue.SearchAlbergue(txtSearch.Text);
             }
         }
+
+        private void txtInfra_Leave(object sender, EventArgs e)
+        {
+            if(txtInfra.Text != "")
+            {
+                txtInfra.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtInfra.Text));
+            }
+            
+        }
+
+        private void txtEdu_Leave(object sender, EventArgs e)
+        {
+            if (txtEdu.Text != "")
+            {
+                txtEdu.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtEdu.Text));
+            }
+        }
+
+        private void txtSalu_Leave(object sender, EventArgs e)
+        {
+            if (txtSalu.Text != "")
+            {
+                txtSalu.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtSalu.Text));
+            }
+            
+        }
+
+        private void txtRecre_Leave(object sender, EventArgs e)
+        {
+            if (txtRecre.Text != "")
+            {
+                txtRecre.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtRecre.Text));
+            }
+            
+        }
+
+        private void txtAlime_Leave(object sender, EventArgs e)
+        {
+            if (txtAlime.Text != "")
+            {
+                txtAlime.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtAlime.Text));
+            }
+            
+        }
+
+        private void txtHigiene_Leave(object sender, EventArgs e)
+        {
+            if (txtHigiene.Text != "")
+            {
+                txtHigiene.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtHigiene.Text));
+            }
+            
+        }
+
+        private void txtVestuario_Leave(object sender, EventArgs e)
+        {
+            if (txtVestuario.Text != "")
+            {
+                txtVestuario.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtVestuario.Text));
+            }
+            
+        }
+
+        private void txtCuidado_Leave(object sender, EventArgs e)
+        {
+            if (txtCuidado.Text != "")
+            {
+                txtCuidado.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtCuidado.Text));
+            }
+            
+        }
+
+        private void txtAten_Leave(object sender, EventArgs e)
+        {
+            if (txtAten.Text != "")
+            {
+                txtAten.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtAten.Text));
+            }
+            
+        }
+
+        private void txtCompra_Leave(object sender, EventArgs e)
+        {
+            if (txtCompra.Text != "")
+            {
+                txtCompra.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtCompra.Text));
+            }
+            
+        }
+
+        private void textBoxMesad_Leave(object sender, EventArgs e)
+        {
+            if (textBoxMesad.Text != "")
+            {
+                textBoxMesad.Text = Text = string.Format("{0:#,##0.00}", double.Parse(textBoxMesad.Text));
+            }
+            
+        }
+
+        private void txtProye_Leave(object sender, EventArgs e)
+        {
+            if (txtProye.Text != "")
+            {
+                txtProye.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtProye.Text));
+            }
+            
+        }
+
+        private void txtAdmin_Leave(object sender, EventArgs e)
+        {
+            if (txtAdmin.Text != "")
+            {
+                txtAdmin.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtAdmin.Text));
+            }
+            
+        }
+
+        private void txtOtros_Leave(object sender, EventArgs e)
+        {
+            if (txtOtros.Text != "")
+            {
+                txtOtros.Text = Text = string.Format("{0:#,##0.00}", double.Parse(txtOtros.Text));
+            }
+        }
     }
 }

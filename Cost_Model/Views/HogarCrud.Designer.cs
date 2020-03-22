@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label21 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -127,14 +127,14 @@
             this.dataGridViewIntervencion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewIntervencion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewIntervencion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewIntervencion.Location = new System.Drawing.Point(7, 492);
             this.dataGridViewIntervencion.Name = "dataGridViewIntervencion";
             this.dataGridViewIntervencion.ReadOnly = true;
@@ -203,6 +203,7 @@
             this.txtAten.Size = new System.Drawing.Size(219, 32);
             this.txtAten.TabIndex = 176;
             this.txtAten.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAten.Leave += new System.EventHandler(this.txtAten_Leave);
             // 
             // label20
             // 
@@ -223,6 +224,7 @@
             this.txtAdmin.Size = new System.Drawing.Size(219, 32);
             this.txtAdmin.TabIndex = 182;
             this.txtAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAdmin.Leave += new System.EventHandler(this.txtAdmin_Leave);
             // 
             // txtProye
             // 
@@ -232,6 +234,7 @@
             this.txtProye.Size = new System.Drawing.Size(219, 32);
             this.txtProye.TabIndex = 181;
             this.txtProye.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtProye.Leave += new System.EventHandler(this.txtProye_Leave);
             // 
             // textBoxMesad
             // 
@@ -241,6 +244,7 @@
             this.textBoxMesad.Size = new System.Drawing.Size(219, 32);
             this.textBoxMesad.TabIndex = 179;
             this.textBoxMesad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMesad.Leave += new System.EventHandler(this.textBoxMesad_Leave);
             // 
             // txtCompra
             // 
@@ -250,6 +254,7 @@
             this.txtCompra.Size = new System.Drawing.Size(219, 32);
             this.txtCompra.TabIndex = 178;
             this.txtCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCompra.Leave += new System.EventHandler(this.txtCompra_Leave);
             // 
             // txtCuidado
             // 
@@ -259,6 +264,7 @@
             this.txtCuidado.Size = new System.Drawing.Size(219, 32);
             this.txtCuidado.TabIndex = 174;
             this.txtCuidado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCuidado.Leave += new System.EventHandler(this.txtCuidado_Leave);
             // 
             // txtVestuario
             // 
@@ -268,6 +274,7 @@
             this.txtVestuario.Size = new System.Drawing.Size(219, 32);
             this.txtVestuario.TabIndex = 173;
             this.txtVestuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtVestuario.Leave += new System.EventHandler(this.txtVestuario_Leave);
             // 
             // label14
             // 
@@ -343,6 +350,7 @@
             this.txtHigiene.Size = new System.Drawing.Size(219, 32);
             this.txtHigiene.TabIndex = 172;
             this.txtHigiene.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtHigiene.Leave += new System.EventHandler(this.txtHigiene_Leave);
             // 
             // txtAlime
             // 
@@ -352,6 +360,7 @@
             this.txtAlime.Size = new System.Drawing.Size(219, 32);
             this.txtAlime.TabIndex = 170;
             this.txtAlime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAlime.Leave += new System.EventHandler(this.txtAlime_Leave);
             // 
             // txtRecre
             // 
@@ -361,6 +370,7 @@
             this.txtRecre.Size = new System.Drawing.Size(219, 32);
             this.txtRecre.TabIndex = 169;
             this.txtRecre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRecre.Leave += new System.EventHandler(this.txtRecre_Leave);
             // 
             // txtSalu
             // 
@@ -370,6 +380,7 @@
             this.txtSalu.Size = new System.Drawing.Size(219, 32);
             this.txtSalu.TabIndex = 167;
             this.txtSalu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSalu.Leave += new System.EventHandler(this.txtSalu_Leave);
             // 
             // txtEdu
             // 
@@ -379,6 +390,7 @@
             this.txtEdu.Size = new System.Drawing.Size(219, 32);
             this.txtEdu.TabIndex = 166;
             this.txtEdu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEdu.Leave += new System.EventHandler(this.txtEdu_Leave);
             // 
             // txtInfra
             // 
@@ -388,6 +400,7 @@
             this.txtInfra.Size = new System.Drawing.Size(219, 32);
             this.txtInfra.TabIndex = 164;
             this.txtInfra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtInfra.Leave += new System.EventHandler(this.txtInfra_Leave);
             // 
             // comboBoxgGender
             // 
@@ -643,6 +656,7 @@
             this.txtOtros.Size = new System.Drawing.Size(219, 32);
             this.txtOtros.TabIndex = 183;
             this.txtOtros.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOtros.Leave += new System.EventHandler(this.txtOtros_Leave);
             // 
             // label22
             // 
