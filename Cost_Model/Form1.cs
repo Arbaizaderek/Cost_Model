@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Cost_Model
         {
             InitializeComponent();
         }
-        DAL.DataBaseModelDataContext db = new DAL.DataBaseModelDataContext();
+        DAL.clsDAL db = new DAL.clsDAL();
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -26,10 +27,34 @@ namespace Cost_Model
         void Login()
         {
 
-                        Views.AdminDashboard screen = new Views.AdminDashboard();
+            var user = GetUser();
+            if (user != "1")
+            {
+                MessageBox.Show("Error con el usuario.");
+            }
+            else
+            {
+                var password = GetPassword();
+                if (password != "1")
+                {
+                    MessageBox.Show("Error con la clave.");
+                }
+                else
+                {
+                    var role = GetRole();
+                    if (role == "True")
+                    {
+                        Views.AdminDashboard screen = new Views.AdminDashboard(txtUsername.Text);
                         screen.Show();
                         this.Hide();
-            
+                    }
+                    else
+                    {
+                        MessageBox.Show("Non");
+                    }
+                }
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,6 +80,43 @@ namespace Cost_Model
                 txtPassword.Focus();
             }
             return true;
+        }
+
+        string GetUser()
+        {
+            db.OpenConnection();
+            String sqlSelectQuery = "select COUNT(PaniUser.Username) as 'Username' from PaniUser where PaniUser.Username = '" + txtUsername.Text + "';";
+            SqlCommand cmd = new SqlCommand(sqlSelectQuery, DAL.clsDAL.db);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return (dr["Username"].ToString());
+            }
+            return "0";
+        }
+        string GetPassword()
+        {
+            db.OpenConnection();
+            String sqlSelectQuery = "select COUNT(PaniUser.Username) as 'Username' from PaniUser where PaniUser.Username = '"+txtUsername.Text+"' and PaniUser.Password = '"+txtPassword.Text+"';";
+            SqlCommand cmd = new SqlCommand(sqlSelectQuery, DAL.clsDAL.db);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return (dr["Username"].ToString());
+            }
+            return "0";
+        }
+        string GetRole()
+        {
+            db.OpenConnection();
+            String sqlSelectQuery = "select PaniUser.Administrator as 'Username' from PaniUser where PaniUser.Username = '" + txtUsername.Text + "' and PaniUser.Password = '" + txtPassword.Text + "';";
+            SqlCommand cmd = new SqlCommand(sqlSelectQuery, DAL.clsDAL.db);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return (dr["Username"].ToString());
+            }
+            return "0";
         }
     }
 }

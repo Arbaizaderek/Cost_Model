@@ -12,11 +12,12 @@ namespace Cost_Model.Views
 {
     public partial class AdminDashboard : Form
     {
-        public AdminDashboard()
+        public AdminDashboard(string user)
         {
             InitializeComponent();
             panelHome.BringToFront();
             labelLocation.Text = "Inicio";
+            labelUser.Text = user;
         }
 
         private void btnHome_Click(object sender, EventArgs e)

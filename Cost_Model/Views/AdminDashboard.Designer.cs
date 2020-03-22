@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
+            this.btnSecurity = new System.Windows.Forms.Button();
+            this.btnModel = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelLocation = new System.Windows.Forms.Label();
             this.panelHome = new System.Windows.Forms.Panel();
             this.panelModel = new System.Windows.Forms.Panel();
+            this.btnProyecto = new System.Windows.Forms.Button();
             this.btnUnity = new System.Windows.Forms.Button();
             this.btnONG = new System.Windows.Forms.Button();
             this.btnHogar = new System.Windows.Forms.Button();
@@ -43,10 +47,7 @@
             this.btnSubModalities = new System.Windows.Forms.Button();
             this.btnUnities = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
-            this.btnProyecto = new System.Windows.Forms.Button();
-            this.btnSecurity = new System.Windows.Forms.Button();
-            this.btnModel = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.labelUser = new System.Windows.Forms.Label();
             this.panelSidebar.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelModel.SuspendLayout();
@@ -56,6 +57,7 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelSidebar.Controls.Add(this.labelUser);
             this.panelSidebar.Controls.Add(this.btnSecurity);
             this.panelSidebar.Controls.Add(this.btnModel);
             this.panelSidebar.Controls.Add(this.btnHome);
@@ -64,6 +66,57 @@
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(384, 729);
             this.panelSidebar.TabIndex = 0;
+            // 
+            // btnSecurity
+            // 
+            this.btnSecurity.FlatAppearance.BorderSize = 0;
+            this.btnSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecurity.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecurity.ForeColor = System.Drawing.Color.White;
+            this.btnSecurity.Image = global::Cost_Model.Properties.Resources.SecurityIcon;
+            this.btnSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecurity.Location = new System.Drawing.Point(2, 474);
+            this.btnSecurity.Name = "btnSecurity";
+            this.btnSecurity.Size = new System.Drawing.Size(381, 101);
+            this.btnSecurity.TabIndex = 2;
+            this.btnSecurity.Text = "Controles";
+            this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSecurity.UseVisualStyleBackColor = true;
+            this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
+            // 
+            // btnModel
+            // 
+            this.btnModel.FlatAppearance.BorderSize = 0;
+            this.btnModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModel.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModel.ForeColor = System.Drawing.Color.White;
+            this.btnModel.Image = global::Cost_Model.Properties.Resources.InfoIcon;
+            this.btnModel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModel.Location = new System.Drawing.Point(2, 311);
+            this.btnModel.Name = "btnModel";
+            this.btnModel.Size = new System.Drawing.Size(381, 101);
+            this.btnModel.TabIndex = 1;
+            this.btnModel.Text = "Modelo de costo";
+            this.btnModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModel.UseVisualStyleBackColor = true;
+            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Cost_Model.Properties.Resources.HomeIcon;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(2, 159);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(381, 101);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Inicio";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTop
             // 
@@ -110,6 +163,21 @@
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(934, 627);
             this.panelModel.TabIndex = 0;
+            // 
+            // btnProyecto
+            // 
+            this.btnProyecto.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnProyecto.FlatAppearance.BorderSize = 0;
+            this.btnProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyecto.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProyecto.ForeColor = System.Drawing.Color.White;
+            this.btnProyecto.Location = new System.Drawing.Point(97, 404);
+            this.btnProyecto.Name = "btnProyecto";
+            this.btnProyecto.Size = new System.Drawing.Size(756, 44);
+            this.btnProyecto.TabIndex = 6;
+            this.btnProyecto.Text = "Proyecto especial";
+            this.btnProyecto.UseVisualStyleBackColor = false;
+            this.btnProyecto.Click += new System.EventHandler(this.btnProyecto_Click);
             // 
             // btnUnity
             // 
@@ -258,71 +326,16 @@
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // btnProyecto
+            // labelUser
             // 
-            this.btnProyecto.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnProyecto.FlatAppearance.BorderSize = 0;
-            this.btnProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProyecto.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProyecto.ForeColor = System.Drawing.Color.White;
-            this.btnProyecto.Location = new System.Drawing.Point(97, 404);
-            this.btnProyecto.Name = "btnProyecto";
-            this.btnProyecto.Size = new System.Drawing.Size(756, 44);
-            this.btnProyecto.TabIndex = 6;
-            this.btnProyecto.Text = "Proyecto especial";
-            this.btnProyecto.UseVisualStyleBackColor = false;
-            this.btnProyecto.Click += new System.EventHandler(this.btnProyecto_Click);
-            // 
-            // btnSecurity
-            // 
-            this.btnSecurity.FlatAppearance.BorderSize = 0;
-            this.btnSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSecurity.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecurity.ForeColor = System.Drawing.Color.White;
-            this.btnSecurity.Image = global::Cost_Model.Properties.Resources.SecurityIcon;
-            this.btnSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSecurity.Location = new System.Drawing.Point(2, 474);
-            this.btnSecurity.Name = "btnSecurity";
-            this.btnSecurity.Size = new System.Drawing.Size(381, 101);
-            this.btnSecurity.TabIndex = 2;
-            this.btnSecurity.Text = "Controles";
-            this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSecurity.UseVisualStyleBackColor = true;
-            this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
-            // 
-            // btnModel
-            // 
-            this.btnModel.FlatAppearance.BorderSize = 0;
-            this.btnModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModel.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModel.ForeColor = System.Drawing.Color.White;
-            this.btnModel.Image = global::Cost_Model.Properties.Resources.InfoIcon;
-            this.btnModel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModel.Location = new System.Drawing.Point(2, 311);
-            this.btnModel.Name = "btnModel";
-            this.btnModel.Size = new System.Drawing.Size(381, 101);
-            this.btnModel.TabIndex = 1;
-            this.btnModel.Text = "Modelo de costo";
-            this.btnModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModel.UseVisualStyleBackColor = true;
-            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::Cost_Model.Properties.Resources.HomeIcon;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(2, 159);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(381, 101);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Inicio";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.White;
+            this.labelUser.Location = new System.Drawing.Point(151, 685);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(68, 35);
+            this.labelUser.TabIndex = 1;
+            this.labelUser.Text = "User";
             // 
             // AdminDashboard
             // 
@@ -337,6 +350,7 @@
             this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
             this.panelSidebar.ResumeLayout(false);
+            this.panelSidebar.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panelModel.ResumeLayout(false);
@@ -366,5 +380,6 @@
         private System.Windows.Forms.Button btnUnities;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnProyecto;
+        private System.Windows.Forms.Label labelUser;
     }
 }
