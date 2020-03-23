@@ -103,6 +103,12 @@
     <Compile Include="Views\IntervencionFilter.Designer.cs">
       <DependentUpon>IntervencionFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NonAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NonAdminDashboard.Designer.cs">
+      <DependentUpon>NonAdminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ONGCrud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\IntervencionFilter.resx">
       <DependentUpon>IntervencionFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NonAdminDashboard.resx">
+      <DependentUpon>NonAdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ONGCrud.resx">
       <DependentUpon>ONGCrud.cs</DependentUpon>

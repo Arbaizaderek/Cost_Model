@@ -30,6 +30,9 @@
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.labelUser = new System.Windows.Forms.Label();
+            this.btnSecurity = new System.Windows.Forms.Button();
+            this.btnModel = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelLocation = new System.Windows.Forms.Label();
             this.panelHome = new System.Windows.Forms.Panel();
@@ -42,14 +45,11 @@
             this.btnIntervention = new System.Windows.Forms.Button();
             this.btnShelter = new System.Windows.Forms.Button();
             this.panelSecurity = new System.Windows.Forms.Panel();
+            this.btnBit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSubModalities = new System.Windows.Forms.Button();
             this.btnUnities = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSecurity = new System.Windows.Forms.Button();
-            this.btnModel = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnBit = new System.Windows.Forms.Button();
             this.panelSidebar.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelModel.SuspendLayout();
@@ -80,6 +80,57 @@
             this.labelUser.Size = new System.Drawing.Size(68, 35);
             this.labelUser.TabIndex = 1;
             this.labelUser.Text = "User";
+            // 
+            // btnSecurity
+            // 
+            this.btnSecurity.FlatAppearance.BorderSize = 0;
+            this.btnSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecurity.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecurity.ForeColor = System.Drawing.Color.White;
+            this.btnSecurity.Image = global::Cost_Model.Properties.Resources.SecurityIcon;
+            this.btnSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecurity.Location = new System.Drawing.Point(2, 474);
+            this.btnSecurity.Name = "btnSecurity";
+            this.btnSecurity.Size = new System.Drawing.Size(381, 101);
+            this.btnSecurity.TabIndex = 2;
+            this.btnSecurity.Text = "Controles";
+            this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSecurity.UseVisualStyleBackColor = true;
+            this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
+            // 
+            // btnModel
+            // 
+            this.btnModel.FlatAppearance.BorderSize = 0;
+            this.btnModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModel.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModel.ForeColor = System.Drawing.Color.White;
+            this.btnModel.Image = global::Cost_Model.Properties.Resources.InfoIcon;
+            this.btnModel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModel.Location = new System.Drawing.Point(2, 311);
+            this.btnModel.Name = "btnModel";
+            this.btnModel.Size = new System.Drawing.Size(381, 101);
+            this.btnModel.TabIndex = 1;
+            this.btnModel.Text = "Modelo de costo";
+            this.btnModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModel.UseVisualStyleBackColor = true;
+            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Cost_Model.Properties.Resources.HomeIcon;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(2, 159);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(381, 101);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Inicio";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTop
             // 
@@ -246,6 +297,33 @@
             this.panelSecurity.Size = new System.Drawing.Size(934, 627);
             this.panelSecurity.TabIndex = 0;
             // 
+            // btnBit
+            // 
+            this.btnBit.FlatAppearance.BorderSize = 0;
+            this.btnBit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBit.ForeColor = System.Drawing.Color.White;
+            this.btnBit.Image = global::Cost_Model.Properties.Resources.BitIcon;
+            this.btnBit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBit.Location = new System.Drawing.Point(668, 275);
+            this.btnBit.Name = "btnBit";
+            this.btnBit.Size = new System.Drawing.Size(106, 74);
+            this.btnBit.TabIndex = 4;
+            this.btnBit.Text = "Bitácora";
+            this.btnBit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBit.UseVisualStyleBackColor = true;
+            this.btnBit.Click += new System.EventHandler(this.btnBit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cost_Model.Properties.Resources.AboutIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(831, 501);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // btnSubModalities
             // 
             this.btnSubModalities.BackColor = System.Drawing.Color.SteelBlue;
@@ -291,92 +369,14 @@
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cost_Model.Properties.Resources.AboutIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(831, 501);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 48);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnSecurity
-            // 
-            this.btnSecurity.FlatAppearance.BorderSize = 0;
-            this.btnSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSecurity.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecurity.ForeColor = System.Drawing.Color.White;
-            this.btnSecurity.Image = global::Cost_Model.Properties.Resources.SecurityIcon;
-            this.btnSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSecurity.Location = new System.Drawing.Point(2, 474);
-            this.btnSecurity.Name = "btnSecurity";
-            this.btnSecurity.Size = new System.Drawing.Size(381, 101);
-            this.btnSecurity.TabIndex = 2;
-            this.btnSecurity.Text = "Controles";
-            this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSecurity.UseVisualStyleBackColor = true;
-            this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
-            // 
-            // btnModel
-            // 
-            this.btnModel.FlatAppearance.BorderSize = 0;
-            this.btnModel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModel.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModel.ForeColor = System.Drawing.Color.White;
-            this.btnModel.Image = global::Cost_Model.Properties.Resources.InfoIcon;
-            this.btnModel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModel.Location = new System.Drawing.Point(2, 311);
-            this.btnModel.Name = "btnModel";
-            this.btnModel.Size = new System.Drawing.Size(381, 101);
-            this.btnModel.TabIndex = 1;
-            this.btnModel.Text = "Modelo de costo";
-            this.btnModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModel.UseVisualStyleBackColor = true;
-            this.btnModel.Click += new System.EventHandler(this.btnModel_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::Cost_Model.Properties.Resources.HomeIcon;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(2, 159);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(381, 101);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Inicio";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnBit
-            // 
-            this.btnBit.FlatAppearance.BorderSize = 0;
-            this.btnBit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBit.ForeColor = System.Drawing.Color.White;
-            this.btnBit.Image = global::Cost_Model.Properties.Resources.BitIcon;
-            this.btnBit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBit.Location = new System.Drawing.Point(668, 275);
-            this.btnBit.Name = "btnBit";
-            this.btnBit.Size = new System.Drawing.Size(106, 74);
-            this.btnBit.TabIndex = 4;
-            this.btnBit.Text = "Bitácora";
-            this.btnBit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBit.UseVisualStyleBackColor = true;
-            this.btnBit.Click += new System.EventHandler(this.btnBit_Click);
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 729);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelSecurity);
             this.Controls.Add(this.panelModel);
-            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelSidebar);
             this.Name = "AdminDashboard";

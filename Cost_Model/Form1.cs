@@ -50,7 +50,9 @@ namespace Cost_Model
                     }
                     else
                     {
-                        MessageBox.Show("Non");
+                        Views.NonAdminDashboard screen = new Views.NonAdminDashboard(txtUsername.Text);
+                        screen.Show();
+                        this.Hide();
                     }
                 }
             }
