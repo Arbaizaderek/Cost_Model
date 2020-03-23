@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class HogarCrud : Form
     {
         BLL.clsHogar hogar = new BLL.clsHogar();
-        public HogarCrud()
+        public HogarCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             EnlistHogar();
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
         }
         void LoadSubModilty()
         {
@@ -339,7 +340,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            hogar.InsertHogar(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            hogar.InsertHogar(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistHogar();
             Clean();
         }
@@ -439,7 +440,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            hogar.UpdateHogar(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            hogar.UpdateHogar(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistHogar();
             Clean();
             labelCost.Visible = false;
@@ -534,7 +535,7 @@ namespace Cost_Model.Views
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            hogar.DeleteHogar(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            hogar.DeleteHogar(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), labelUser.Text);
             Clean();
             EnlistHogar();
             btnSave.Visible = true;

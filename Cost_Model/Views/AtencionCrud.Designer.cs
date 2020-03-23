@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label21 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataGridViewIntervencion = new System.Windows.Forms.DataGridView();
@@ -82,6 +82,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIntervencion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownF1318)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownF712)).BeginInit();
@@ -117,14 +118,14 @@
             this.dataGridViewIntervencion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewIntervencion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewIntervencion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewIntervencion.Location = new System.Drawing.Point(7, 492);
             this.dataGridViewIntervencion.Name = "dataGridViewIntervencion";
             this.dataGridViewIntervencion.ReadOnly = true;
@@ -137,7 +138,7 @@
             // txtAten
             // 
             this.txtAten.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAten.Location = new System.Drawing.Point(1411, 126);
+            this.txtAten.Location = new System.Drawing.Point(1411, 163);
             this.txtAten.Name = "txtAten";
             this.txtAten.Size = new System.Drawing.Size(219, 32);
             this.txtAten.TabIndex = 127;
@@ -149,7 +150,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(1225, 129);
+            this.label20.Location = new System.Drawing.Point(1225, 166);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(181, 29);
             this.label20.TabIndex = 148;
@@ -158,7 +159,7 @@
             // txtAdmin
             // 
             this.txtAdmin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdmin.Location = new System.Drawing.Point(1411, 277);
+            this.txtAdmin.Location = new System.Drawing.Point(1411, 314);
             this.txtAdmin.Name = "txtAdmin";
             this.txtAdmin.Size = new System.Drawing.Size(219, 32);
             this.txtAdmin.TabIndex = 133;
@@ -168,7 +169,7 @@
             // txtProye
             // 
             this.txtProye.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProye.Location = new System.Drawing.Point(1411, 239);
+            this.txtProye.Location = new System.Drawing.Point(1411, 276);
             this.txtProye.Name = "txtProye";
             this.txtProye.Size = new System.Drawing.Size(219, 32);
             this.txtProye.TabIndex = 132;
@@ -178,7 +179,7 @@
             // textBoxMesad
             // 
             this.textBoxMesad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMesad.Location = new System.Drawing.Point(1411, 201);
+            this.textBoxMesad.Location = new System.Drawing.Point(1411, 238);
             this.textBoxMesad.Name = "textBoxMesad";
             this.textBoxMesad.Size = new System.Drawing.Size(219, 32);
             this.textBoxMesad.TabIndex = 130;
@@ -188,7 +189,7 @@
             // txtCompra
             // 
             this.txtCompra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompra.Location = new System.Drawing.Point(1411, 163);
+            this.txtCompra.Location = new System.Drawing.Point(1411, 200);
             this.txtCompra.Name = "txtCompra";
             this.txtCompra.Size = new System.Drawing.Size(219, 32);
             this.txtCompra.TabIndex = 129;
@@ -198,7 +199,7 @@
             // txtCuidado
             // 
             this.txtCuidado.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuidado.Location = new System.Drawing.Point(1411, 88);
+            this.txtCuidado.Location = new System.Drawing.Point(1411, 125);
             this.txtCuidado.Name = "txtCuidado";
             this.txtCuidado.Size = new System.Drawing.Size(219, 32);
             this.txtCuidado.TabIndex = 125;
@@ -208,7 +209,7 @@
             // txtVestuario
             // 
             this.txtVestuario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVestuario.Location = new System.Drawing.Point(1411, 51);
+            this.txtVestuario.Location = new System.Drawing.Point(1411, 88);
             this.txtVestuario.Name = "txtVestuario";
             this.txtVestuario.Size = new System.Drawing.Size(219, 32);
             this.txtVestuario.TabIndex = 124;
@@ -220,7 +221,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1164, 281);
+            this.label14.Location = new System.Drawing.Point(1164, 318);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(242, 29);
             this.label14.TabIndex = 147;
@@ -231,7 +232,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1223, 240);
+            this.label15.Location = new System.Drawing.Point(1223, 277);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(183, 29);
             this.label15.TabIndex = 146;
@@ -242,7 +243,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1299, 199);
+            this.label16.Location = new System.Drawing.Point(1299, 236);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(107, 29);
             this.label16.TabIndex = 145;
@@ -253,7 +254,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(1068, 167);
+            this.label17.Location = new System.Drawing.Point(1068, 204);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(338, 29);
             this.label17.TabIndex = 144;
@@ -264,7 +265,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(1241, 91);
+            this.label18.Location = new System.Drawing.Point(1241, 128);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(165, 29);
             this.label18.TabIndex = 143;
@@ -275,7 +276,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(1293, 55);
+            this.label19.Location = new System.Drawing.Point(1293, 92);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(113, 29);
             this.label19.TabIndex = 142;
@@ -284,7 +285,7 @@
             // txtHigiene
             // 
             this.txtHigiene.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHigiene.Location = new System.Drawing.Point(843, 284);
+            this.txtHigiene.Location = new System.Drawing.Point(843, 321);
             this.txtHigiene.Name = "txtHigiene";
             this.txtHigiene.Size = new System.Drawing.Size(219, 32);
             this.txtHigiene.TabIndex = 123;
@@ -294,7 +295,7 @@
             // txtAlime
             // 
             this.txtAlime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlime.Location = new System.Drawing.Point(843, 243);
+            this.txtAlime.Location = new System.Drawing.Point(843, 280);
             this.txtAlime.Name = "txtAlime";
             this.txtAlime.Size = new System.Drawing.Size(219, 32);
             this.txtAlime.TabIndex = 121;
@@ -304,7 +305,7 @@
             // txtRecre
             // 
             this.txtRecre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecre.Location = new System.Drawing.Point(843, 205);
+            this.txtRecre.Location = new System.Drawing.Point(843, 242);
             this.txtRecre.Name = "txtRecre";
             this.txtRecre.Size = new System.Drawing.Size(219, 32);
             this.txtRecre.TabIndex = 120;
@@ -314,7 +315,7 @@
             // txtSalu
             // 
             this.txtSalu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalu.Location = new System.Drawing.Point(843, 167);
+            this.txtSalu.Location = new System.Drawing.Point(843, 204);
             this.txtSalu.Name = "txtSalu";
             this.txtSalu.Size = new System.Drawing.Size(219, 32);
             this.txtSalu.TabIndex = 118;
@@ -324,7 +325,7 @@
             // txtEdu
             // 
             this.txtEdu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdu.Location = new System.Drawing.Point(843, 128);
+            this.txtEdu.Location = new System.Drawing.Point(843, 165);
             this.txtEdu.Name = "txtEdu";
             this.txtEdu.Size = new System.Drawing.Size(219, 32);
             this.txtEdu.TabIndex = 117;
@@ -334,7 +335,7 @@
             // txtInfra
             // 
             this.txtInfra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInfra.Location = new System.Drawing.Point(843, 90);
+            this.txtInfra.Location = new System.Drawing.Point(843, 127);
             this.txtInfra.Name = "txtInfra";
             this.txtInfra.Size = new System.Drawing.Size(219, 32);
             this.txtInfra.TabIndex = 115;
@@ -345,7 +346,7 @@
             // 
             this.comboBoxgGender.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxgGender.FormattingEnabled = true;
-            this.comboBoxgGender.Location = new System.Drawing.Point(843, 52);
+            this.comboBoxgGender.Location = new System.Drawing.Point(843, 89);
             this.comboBoxgGender.Name = "comboBoxgGender";
             this.comboBoxgGender.Size = new System.Drawing.Size(219, 32);
             this.comboBoxgGender.TabIndex = 114;
@@ -355,7 +356,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(538, 287);
+            this.label7.Location = new System.Drawing.Point(538, 324);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(299, 29);
             this.label7.TabIndex = 141;
@@ -366,7 +367,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(686, 246);
+            this.label8.Location = new System.Drawing.Point(686, 283);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(151, 29);
             this.label8.TabIndex = 140;
@@ -377,7 +378,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(709, 208);
+            this.label9.Location = new System.Drawing.Point(709, 245);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 29);
             this.label9.TabIndex = 139;
@@ -388,7 +389,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(763, 170);
+            this.label10.Location = new System.Drawing.Point(763, 207);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(74, 29);
             this.label10.TabIndex = 138;
@@ -399,7 +400,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(716, 129);
+            this.label11.Location = new System.Drawing.Point(716, 166);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(121, 29);
             this.label11.TabIndex = 137;
@@ -410,7 +411,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(519, 91);
+            this.label12.Location = new System.Drawing.Point(519, 128);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(318, 29);
             this.label12.TabIndex = 136;
@@ -421,7 +422,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(745, 51);
+            this.label13.Location = new System.Drawing.Point(745, 88);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 29);
             this.label13.TabIndex = 134;
@@ -551,17 +552,17 @@
             // 
             this.comboBoxSubmodality.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSubmodality.FormattingEnabled = true;
-            this.comboBoxSubmodality.Location = new System.Drawing.Point(207, 94);
+            this.comboBoxSubmodality.Location = new System.Drawing.Point(207, 51);
             this.comboBoxSubmodality.Name = "comboBoxSubmodality";
-            this.comboBoxSubmodality.Size = new System.Drawing.Size(296, 29);
-            this.comboBoxSubmodality.TabIndex = 107;
+            this.comboBoxSubmodality.Size = new System.Drawing.Size(1423, 29);
+            this.comboBoxSubmodality.TabIndex = 106;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(31, 91);
+            this.label1.Location = new System.Drawing.Point(31, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 29);
             this.label1.TabIndex = 116;
@@ -570,10 +571,10 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(207, 56);
+            this.txtName.Location = new System.Drawing.Point(208, 90);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(296, 32);
-            this.txtName.TabIndex = 106;
+            this.txtName.TabIndex = 107;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelLocation
@@ -581,7 +582,7 @@
             this.labelLocation.AutoSize = true;
             this.labelLocation.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLocation.ForeColor = System.Drawing.Color.White;
-            this.labelLocation.Location = new System.Drawing.Point(101, 56);
+            this.labelLocation.Location = new System.Drawing.Point(102, 90);
             this.labelLocation.Name = "labelLocation";
             this.labelLocation.Size = new System.Drawing.Size(100, 29);
             this.labelLocation.TabIndex = 113;
@@ -651,7 +652,7 @@
             // txtOtros
             // 
             this.txtOtros.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtros.Location = new System.Drawing.Point(1411, 315);
+            this.txtOtros.Location = new System.Drawing.Point(1411, 352);
             this.txtOtros.Name = "txtOtros";
             this.txtOtros.Size = new System.Drawing.Size(219, 32);
             this.txtOtros.TabIndex = 134;
@@ -663,7 +664,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(1333, 317);
+            this.label22.Location = new System.Drawing.Point(1333, 354);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(73, 29);
             this.label22.TabIndex = 156;
@@ -674,7 +675,7 @@
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotal.ForeColor = System.Drawing.Color.Black;
-            this.labelTotal.Location = new System.Drawing.Point(1484, 359);
+            this.labelTotal.Location = new System.Drawing.Point(1484, 396);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(62, 37);
             this.labelTotal.TabIndex = 158;
@@ -685,11 +686,23 @@
             this.labelCost.AutoSize = true;
             this.labelCost.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCost.ForeColor = System.Drawing.Color.Black;
-            this.labelCost.Location = new System.Drawing.Point(1119, 359);
+            this.labelCost.Location = new System.Drawing.Point(1119, 396);
             this.labelCost.Name = "labelCost";
             this.labelCost.Size = new System.Drawing.Size(338, 37);
             this.labelCost.TabIndex = 157;
             this.labelCost.Text = "Costo por menor de edad:";
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Black;
+            this.labelUser.Location = new System.Drawing.Point(318, 342);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(63, 35);
+            this.labelUser.TabIndex = 213;
+            this.labelUser.Text = "AAA";
+            this.labelUser.Visible = false;
             // 
             // AtencionCrud
             // 
@@ -697,6 +710,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1722, 755);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.txtOtros);
@@ -818,5 +832,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelCost;
+        private System.Windows.Forms.Label labelUser;
     }
 }

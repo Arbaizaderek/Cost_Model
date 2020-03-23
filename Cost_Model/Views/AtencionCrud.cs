@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class AtencionCrud : Form
     {
         BLL.clsCentro centro = new BLL.clsCentro();
-        public AtencionCrud()
+        public AtencionCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             EnlistCentro();
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
 
         }
         void LoadSubModilty()
@@ -341,7 +342,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            centro.InsertCentro(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            centro.InsertCentro(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistCentro();
             Clean();
         }
@@ -521,7 +522,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            centro.UpdateCentro(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            centro.UpdateCentro(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistCentro();
             Clean();
             labelCost.Visible = false;
@@ -539,7 +540,7 @@ namespace Cost_Model.Views
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            centro.DeleteCentro(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            centro.DeleteCentro(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), labelUser.Text);
             Clean();
             EnlistCentro();
             btnSave.Visible = true;

@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class ProyectoCrud : Form
     {
         BLL.clsProyecto proyecto = new BLL.clsProyecto();
-        public ProyectoCrud()
+        public ProyectoCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             EnlistProyecto();
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
         }
         void LoadSubModilty()
         {
@@ -341,7 +342,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            proyecto.InsertProyecto(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            proyecto.InsertProyecto(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistProyecto();
             Clean();
         }
@@ -523,7 +524,7 @@ namespace Cost_Model.Views
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
 
-            proyecto.UpdateProyecto(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            proyecto.UpdateProyecto(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistProyecto();
             Clean();
             labelCost.Visible = false;
@@ -540,7 +541,7 @@ namespace Cost_Model.Views
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            proyecto.DeleteProyecto(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            proyecto.DeleteProyecto(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), labelUser.Text);
             Clean();
             EnlistProyecto();
             btnSave.Visible = true;

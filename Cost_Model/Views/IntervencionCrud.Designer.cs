@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label21 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -82,6 +82,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIntervencion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownF1318)).BeginInit();
@@ -127,14 +128,14 @@
             this.dataGridViewIntervencion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewIntervencion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewIntervencion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewIntervencion.Location = new System.Drawing.Point(7, 492);
             this.dataGridViewIntervencion.Name = "dataGridViewIntervencion";
             this.dataGridViewIntervencion.ReadOnly = true;
@@ -691,12 +692,25 @@
             this.labelCost.TabIndex = 108;
             this.labelCost.Text = "Costo por menor de edad:";
             // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Black;
+            this.labelUser.Location = new System.Drawing.Point(270, 352);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(63, 35);
+            this.labelUser.TabIndex = 213;
+            this.labelUser.Text = "AAA";
+            this.labelUser.Visible = false;
+            // 
             // IntervencionCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1722, 755);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.txtOtros);
@@ -818,5 +832,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelCost;
+        private System.Windows.Forms.Label labelUser;
     }
 }

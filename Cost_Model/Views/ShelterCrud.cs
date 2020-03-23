@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class ShelterCrud : Form
     {
         BLL.clsAlbergue albergue = new BLL.clsAlbergue();
-        public ShelterCrud()
+        public ShelterCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             btnDelete.Visible = false;
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
         }
         void LoadSubModilty()
         {
@@ -311,7 +312,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            albergue.InsertAlbergue(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            albergue.InsertAlbergue(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistAlbergue();
             Clean();
         }
@@ -448,7 +449,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            albergue.UpdateAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value) ,name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            albergue.UpdateAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value) ,name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistAlbergue();
             Clean();
             labelCost.Visible = false;
@@ -546,7 +547,7 @@ namespace Cost_Model.Views
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            albergue.DeleteAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value));
+            albergue.DeleteAlbergue(Convert.ToInt32(dataGridViewUnity.CurrentRow.Cells[0].Value), labelUser.Text);
             btnSave.Visible = true;
             btnUpdate.Visible = false;
             btnDelete.Visible = false;

@@ -54,7 +54,7 @@ namespace Cost_Model.Views
 
         private void btnUnities_Click(object sender, EventArgs e)
         {
-            Views.UnitySelector screen = new Views.UnitySelector();
+            Views.UnitySelector screen = new Views.UnitySelector(labelUser.Text);
             screen.Show();
         }
 

@@ -25,29 +25,29 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
-        public void InsertONG(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe)
+        public void InsertONG(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE INSERTONG  '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ";";
+            command.CommandText = "EXECUTE INSERTONG  '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ",'" + user + "';";
             command.ExecuteNonQuery();
             MessageBox.Show("ONG agregada.", "ONG", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
         }
-        public void UpdateONG(int id, string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal oth)
+        public void UpdateONG(int id, string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal oth, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE UPDATEONG " + id + ",'" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + oth + ";";
+            command.CommandText = "EXECUTE UPDATEONG " + id + ",'" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + oth + ",'" + user + "';";
             command.ExecuteNonQuery();
             MessageBox.Show("ONG editado.", "ONG", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
         }
-        public void DeleteONG(int id)
+        public void DeleteONG(int id, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE DELETEONG " + id + ";";
+            command.CommandText = "EXECUTE DELETEONG " + id + ",'" + user + "';";
             command.ExecuteNonQuery();
             MessageBox.Show("ONG eliminada.", "ONG", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();

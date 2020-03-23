@@ -25,29 +25,29 @@ namespace BLL
             return dataTable;
             db.CloseConnection();
         }
-        public void InsertUnidad(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe)
+        public void InsertUnidad(string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "exec InsertUnidad '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ";";
+            command.CommandText = "exec InsertUnidad '" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ",'"+user+"';";
             command.ExecuteNonQuery();
             MessageBox.Show("Unidad móvil agregada.", "Unidad móvil", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
         }
-        public void UpdateUnidad(int id, string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe)
+        public void UpdateUnidad(int id, string name, string sub, int region, int f1, int f2, int f3, int f4, int gender, decimal infra, decimal educa, decimal health, decimal recreation, decimal feeding, decimal hygiene, decimal dressing, decimal daily, decimal direct, decimal equipment, decimal allow, decimal life, decimal admi, decimal othe, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE UPDATEUNIDAD " + id + ",'" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ";";
+            command.CommandText = "EXECUTE UPDATEUNIDAD " + id + ",'" + name + "','" + sub + "'," + region + "," + f1 + "," + f2 + "," + f3 + "," + f4 + "," + gender + "," + infra + "," + educa + "," + health + "," + recreation + "," + feeding + "," + hygiene + "," + dressing + "," + daily + "," + direct + "," + equipment + "," + allow + "," + life + "," + admi + "," + othe + ",'" + user + "';";
             command.ExecuteNonQuery();
             MessageBox.Show("Unidad móvil editado.", "Unidad móvil", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();
         }
-        public void DeleteUnidad(int id)
+        public void DeleteUnidad(int id, string user)
         {
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE DELETEUNIDAD " + id + ";";
+            command.CommandText = "EXECUTE DELETEUNIDAD " + id + ",'"+user+"';";
             command.ExecuteNonQuery();
             MessageBox.Show("Unidad móvil eliminada.", "Unidad móvil", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.CloseConnection();

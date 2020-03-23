@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class UnidadCrud : Form
     {
         BLL.clsUnidad unidad = new BLL.clsUnidad();
-        public UnidadCrud()
+        public UnidadCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             EnlistUnidad();
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
         }
         void LoadSubModilty()
         {
@@ -341,7 +342,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            unidad.InsertUnidad(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            unidad.InsertUnidad(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistUnidad();
             Clean();
         }
@@ -522,7 +523,7 @@ namespace Cost_Model.Views
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
 
-            unidad.UpdateUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            unidad.UpdateUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistUnidad();
             Clean();
             labelCost.Visible = false;
@@ -537,7 +538,7 @@ namespace Cost_Model.Views
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            unidad.DeleteUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            unidad.DeleteUnidad(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), labelUser.Text);
             Clean();
             EnlistUnidad();
             btnSave.Visible = true;

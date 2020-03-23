@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label21 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -82,6 +82,7 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
             this.txtCompra = new System.Windows.Forms.TextBox();
+            this.labelUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIntervencion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownF1318)).BeginInit();
@@ -127,14 +128,14 @@
             this.dataGridViewIntervencion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewIntervencion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewIntervencion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewIntervencion.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewIntervencion.Location = new System.Drawing.Point(7, 492);
             this.dataGridViewIntervencion.Name = "dataGridViewIntervencion";
             this.dataGridViewIntervencion.ReadOnly = true;
@@ -692,12 +693,25 @@
             this.txtCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCompra.Leave += new System.EventHandler(this.txtCompra_Leave);
             // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Black;
+            this.labelUser.Location = new System.Drawing.Point(316, 351);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(63, 35);
+            this.labelUser.TabIndex = 257;
+            this.labelUser.Text = "AAA";
+            this.labelUser.Visible = false;
+            // 
             // ONGCrud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1722, 755);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.txtOtros);
@@ -819,5 +833,6 @@
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelCost;
         private System.Windows.Forms.TextBox txtCompra;
+        private System.Windows.Forms.Label labelUser;
     }
 }

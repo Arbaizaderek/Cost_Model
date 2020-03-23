@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             this.panelModel = new System.Windows.Forms.Panel();
+            this.btnProyectoEspecial = new System.Windows.Forms.Button();
             this.labelLocation = new System.Windows.Forms.Label();
             this.btnUnity = new System.Windows.Forms.Button();
             this.btnONG = new System.Windows.Forms.Button();
             this.btnHogar = new System.Windows.Forms.Button();
+            this.btnCenter = new System.Windows.Forms.Button();
             this.btnIntervention = new System.Windows.Forms.Button();
             this.btnShelter = new System.Windows.Forms.Button();
-            this.btnProyectoEspecial = new System.Windows.Forms.Button();
-            this.btnCenter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelModel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelModel
             // 
             this.panelModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(206)))), ((int)(((byte)(226)))));
+            this.panelModel.Controls.Add(this.label1);
             this.panelModel.Controls.Add(this.btnProyectoEspecial);
             this.panelModel.Controls.Add(this.labelLocation);
             this.panelModel.Controls.Add(this.btnUnity);
@@ -56,6 +58,21 @@
             this.panelModel.Name = "panelModel";
             this.panelModel.Size = new System.Drawing.Size(884, 665);
             this.panelModel.TabIndex = 1;
+            // 
+            // btnProyectoEspecial
+            // 
+            this.btnProyectoEspecial.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnProyectoEspecial.FlatAppearance.BorderSize = 0;
+            this.btnProyectoEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyectoEspecial.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProyectoEspecial.ForeColor = System.Drawing.Color.White;
+            this.btnProyectoEspecial.Location = new System.Drawing.Point(47, 501);
+            this.btnProyectoEspecial.Name = "btnProyectoEspecial";
+            this.btnProyectoEspecial.Size = new System.Drawing.Size(790, 56);
+            this.btnProyectoEspecial.TabIndex = 7;
+            this.btnProyectoEspecial.Text = "Proyecto Especial";
+            this.btnProyectoEspecial.UseVisualStyleBackColor = false;
+            this.btnProyectoEspecial.Click += new System.EventHandler(this.btnProyectoEspecial_Click);
             // 
             // labelLocation
             // 
@@ -113,6 +130,21 @@
             this.btnHogar.UseVisualStyleBackColor = false;
             this.btnHogar.Click += new System.EventHandler(this.btnHogar_Click);
             // 
+            // btnCenter
+            // 
+            this.btnCenter.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCenter.FlatAppearance.BorderSize = 0;
+            this.btnCenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCenter.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCenter.ForeColor = System.Drawing.Color.White;
+            this.btnCenter.Location = new System.Drawing.Point(47, 270);
+            this.btnCenter.Name = "btnCenter";
+            this.btnCenter.Size = new System.Drawing.Size(790, 56);
+            this.btnCenter.TabIndex = 2;
+            this.btnCenter.Text = "Centro de Atención Integral";
+            this.btnCenter.UseVisualStyleBackColor = false;
+            this.btnCenter.Click += new System.EventHandler(this.btnCenter_Click);
+            // 
             // btnIntervention
             // 
             this.btnIntervention.BackColor = System.Drawing.Color.SteelBlue;
@@ -143,35 +175,17 @@
             this.btnShelter.UseVisualStyleBackColor = false;
             this.btnShelter.Click += new System.EventHandler(this.btnShelter_Click);
             // 
-            // btnProyectoEspecial
+            // label1
             // 
-            this.btnProyectoEspecial.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnProyectoEspecial.FlatAppearance.BorderSize = 0;
-            this.btnProyectoEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProyectoEspecial.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProyectoEspecial.ForeColor = System.Drawing.Color.White;
-            this.btnProyectoEspecial.Location = new System.Drawing.Point(47, 501);
-            this.btnProyectoEspecial.Name = "btnProyectoEspecial";
-            this.btnProyectoEspecial.Size = new System.Drawing.Size(790, 56);
-            this.btnProyectoEspecial.TabIndex = 7;
-            this.btnProyectoEspecial.Text = "Proyecto Especial";
-            this.btnProyectoEspecial.UseVisualStyleBackColor = false;
-            this.btnProyectoEspecial.Click += new System.EventHandler(this.btnProyectoEspecial_Click);
-            // 
-            // btnCenter
-            // 
-            this.btnCenter.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnCenter.FlatAppearance.BorderSize = 0;
-            this.btnCenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCenter.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCenter.ForeColor = System.Drawing.Color.White;
-            this.btnCenter.Location = new System.Drawing.Point(47, 270);
-            this.btnCenter.Name = "btnCenter";
-            this.btnCenter.Size = new System.Drawing.Size(790, 56);
-            this.btnCenter.TabIndex = 2;
-            this.btnCenter.Text = "Centro de Atención Integral";
-            this.btnCenter.UseVisualStyleBackColor = false;
-            this.btnCenter.Click += new System.EventHandler(this.btnCenter_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(24, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 35);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "AAA";
+            this.label1.Visible = false;
             // 
             // UnitySelector
             // 
@@ -198,5 +212,6 @@
         private System.Windows.Forms.Label labelLocation;
         private System.Windows.Forms.Button btnProyectoEspecial;
         private System.Windows.Forms.Button btnCenter;
+        private System.Windows.Forms.Label label1;
     }
 }

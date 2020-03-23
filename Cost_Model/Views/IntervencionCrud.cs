@@ -14,7 +14,7 @@ namespace Cost_Model.Views
     public partial class IntervencionCrud : Form
     {
         BLL.clsIntervencion intervencion = new BLL.clsIntervencion();
-        public IntervencionCrud()
+        public IntervencionCrud(string user)
         {
             InitializeComponent();
             LoadSubModilty();
@@ -29,6 +29,7 @@ namespace Cost_Model.Views
             EnlistIntervencion();
             labelTotal.Visible = false;
             labelCost.Visible = false;
+            labelUser.Text = user;
         }
         void LoadSubModilty()
         {
@@ -314,7 +315,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            intervencion.InsertIntervencion(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            intervencion.InsertIntervencion(name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistIntervencion();
             Clean();
         }
@@ -519,7 +520,7 @@ namespace Cost_Model.Views
             {
                 oth = Convert.ToDecimal(txtOtros.Text);
             }
-            intervencion.UpdateIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth);
+            intervencion.UpdateIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), name, GetSubModality(), GetRegion(), f1, f2, f3, f4, GetGender(), infra, edu, hea, rec, fed, hig, ves, dia, dir, equ, all, vid, adm, oth, labelUser.Text);
             EnlistIntervencion();
             Clean();
             labelCost.Visible = false;
@@ -537,7 +538,7 @@ namespace Cost_Model.Views
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            intervencion.DeleteIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value));
+            intervencion.DeleteIntervencion(Convert.ToInt32(dataGridViewIntervencion.CurrentRow.Cells[0].Value), labelUser.Text);
             Clean();
             EnlistIntervencion();
             btnSave.Visible = true;
