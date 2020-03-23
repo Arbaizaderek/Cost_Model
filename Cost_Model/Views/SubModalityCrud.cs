@@ -33,7 +33,7 @@ namespace Cost_Model.Views
             {
                 db.OpenConnection();
                 command.Connection = DAL.clsDAL.db;
-                command.CommandText = "select Modality.Modality_Name from Modality;";
+                command.CommandText = "select Modality.Modality_Name from Modality order by Modality.Modality_ID asc;";
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {

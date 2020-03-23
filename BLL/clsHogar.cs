@@ -56,7 +56,7 @@ namespace BLL
             DataTable dataTable = new DataTable();
             db.OpenConnection();
             command.Connection = DAL.clsDAL.db;
-            command.CommandText = "EXECUTE SEARCHOGAR '" + search + "';";
+            command.CommandText = "EXECUTE SearchHogar '" + search + "';";
             SqlDataReader reader = command.ExecuteReader();
             dataTable.Load(reader);
             return dataTable;
