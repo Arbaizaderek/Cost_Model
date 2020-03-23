@@ -27,6 +27,7 @@ namespace Cost_Model.Views
             {
                 label24.Text = inf;
                 label36.Text = porInf;
+                label24.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label24.Text));
             }
             if (edu == "")
             {
@@ -38,7 +39,9 @@ namespace Cost_Model.Views
             }
             else
             {
+
                 label23.Text = edu;
+                label23.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label23.Text));
                 label35.Text = porEdu;
             }
             if (sal == "")
@@ -52,6 +55,7 @@ namespace Cost_Model.Views
             else
             {
                 label22.Text = sal;
+                label22.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label22.Text));
                 label34.Text = porSal;
             }
             if (rec == "")
@@ -65,6 +69,7 @@ namespace Cost_Model.Views
             else
             {
                 label21.Text = rec;
+                label21.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label21.Text));
                 label33.Text = porRec;
             }
             if (ali == "")
@@ -79,6 +84,7 @@ namespace Cost_Model.Views
             {
                 label20.Text =ali;
                 label32.Text = porAli;
+                label20.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label20.Text));
             }
             if (hig == "")
             {
@@ -91,6 +97,7 @@ namespace Cost_Model.Views
             else
             {
                 label19.Text = hig;
+                label19.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label19.Text));
                 label31.Text = porHig;
             }
             if (ves == "")
@@ -104,6 +111,7 @@ namespace Cost_Model.Views
             else
             {
                 label18.Text = ves;
+                label18.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label18.Text));
                 label30.Text = porVes;
             }
             if (cui == "")
@@ -117,6 +125,7 @@ namespace Cost_Model.Views
             else
             {
                 label17.Text = cui;
+                label17.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label17.Text));
                 label29.Text = porCui;
             }
             if (ate == "")
@@ -130,7 +139,9 @@ namespace Cost_Model.Views
             }
             else
             {
+
                 label16.Text = ate;
+                label16.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label16.Text));
                 label28.Text = porAte;
             }
 
@@ -145,6 +156,7 @@ namespace Cost_Model.Views
             else
             {
                 label15.Text = com;
+                label15.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label15.Text));
                 label27.Text = porCom;
             }
 
@@ -159,6 +171,7 @@ namespace Cost_Model.Views
             else
             {
                 label14.Text = mes;
+                label14.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label14.Text));
                 label26.Text = porMes;
             }
 
@@ -173,6 +186,7 @@ namespace Cost_Model.Views
             else
             {
                 label13.Text = pro;
+                label13.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label13.Text));
                 label25.Text = porPro;
             }
 
@@ -187,6 +201,7 @@ namespace Cost_Model.Views
             else
             {
                 label67.Text = gas;
+                label67.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label67.Text));
                 label66.Text = porGas;
             }
 
@@ -201,9 +216,11 @@ namespace Cost_Model.Views
             else
             {
                 label72.Text = gas;
+                label72.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label72.Text));
                 label71.Text = porGas;
             }
             label38.Text = tot;
+            label38.Text = Text = string.Format("{0:#,##0.00}", double.Parse(label38.Text));
             labelLocation.Text = location;
         }
 
