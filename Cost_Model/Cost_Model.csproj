@@ -67,6 +67,12 @@
     <Compile Include="Views\AtencionCrud.Designer.cs">
       <DependentUpon>AtencionCrud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Bitacoracs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Bitacoracs.Designer.cs">
+      <DependentUpon>Bitacoracs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CentroFilter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     <EmbeddedResource Include="Views\AtencionCrud.resx">
       <DependentUpon>AtencionCrud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bitacoracs.resx">
+      <DependentUpon>Bitacoracs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CentroFilter.resx">
       <DependentUpon>CentroFilter.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +294,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SearchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AboutIcon.png" />
+    <Content Include="Resources\BitIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

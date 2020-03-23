@@ -32,3 +32,4 @@ C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.O
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.UnidadesFilter.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.ProyectoCrud.resources
 C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.ProyectoFilter.resources
+C:\Users\Arbai\Desktop\W\Pani\Cost_Model\Cost_Model\obj\Debug\Cost_Model.Views.Bitacoracs.resources

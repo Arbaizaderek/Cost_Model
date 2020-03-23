@@ -66,5 +66,17 @@ namespace BLL
             db.CloseConnection();
         }
 
+        public DataTable EnlistBitacora()
+        {
+            DataTable dataTable = new DataTable();
+            db.OpenConnection();
+            command.Connection = DAL.clsDAL.db;
+            command.CommandText = "EXECUTE ENLISTBITACORA";
+            SqlDataReader reader = command.ExecuteReader();
+            dataTable.Load(reader);
+            return dataTable;
+            db.CloseConnection();
+        }
+
     }
 }

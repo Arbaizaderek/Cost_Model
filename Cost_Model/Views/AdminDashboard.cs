@@ -93,5 +93,16 @@ namespace Cost_Model.Views
             Views.ProyectoFilter screen = new Views.ProyectoFilter();
             screen.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Creado por Derek Arbaiza.\nArbaizaderek@hotmail.com");
+        }
+
+        private void btnBit_Click(object sender, EventArgs e)
+        {
+            Views.Bitacoracs screen = new Views.Bitacoracs();
+            screen.Show();
+        }
     }
 }
